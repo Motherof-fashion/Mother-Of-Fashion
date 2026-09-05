@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOTHER OF FASHION & Luxury Design</title>
+    <style>
+        /* --- Luxury Fonts & Variables --- */
+        @import url('https://googleapis.com');
+
+        :root {
+            --black-primary: #0a0a0a;
+            --black-secondary: #121212;
+            --gold-primary: #d4af37;
+            --gold-glow: #f3e5ab;
+            --gold-dark: #aa8416;
+            --text-light: #f5f5f5;
+            --text-muted: #a0a0a0;
+        }
+
+        /* --- Global Reset & Styling --- */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: var(--black-primary);
+            color: var(--text-light);
+            font-family: 'Montserrat', sans-serif;
+            overflow-x: hidden;
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        /* --- Header / Navigation --- */
+        header {
+            background-color: rgba(10, 10, 10, 0.95);
+            border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+            padding: 20px 4%;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .logo {
+            font-family: 'Cinzel', serif;
+            font-size: 28px;
+            font-weight: 700;
+            letter-spacing: 4px;
+            color: var(--gold-primary);
+            text-transform: uppercase;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .tagline {
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            color: var(--text-muted);
+        }
+
+        /* --- Main Content Container --- */
+        .main-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 2%;
+        }
+
+        .section-title {
+            font-family: 'Cinzel', serif;
+            font-size: 24px;
+            text-align: center;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            color: var(--gold-primary);
+            margin-bottom: 10px;
+        }
+
+        .section-subtitle {
+            text-align: center;
+            font-size: 13px;
+            color: var(--text-muted);
+            margin-bottom: 40px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* --- Style Selector (20 Designs Grid) --- */
+        .design-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+            gap: 25px;
+            margin-bottom: 60px;
+        }
+
+        .design-card {
+            background-color: var(--black-secondary);
+            border: 1px solid rgba(212, 175, 55, 0.15);
+            border-radius: 4px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .design-checkbox {
+            display: block;
+            margin: 0 auto 15px auto;
+            accent-color: var(--gold-primary);
+            transform: scale(1.4);
+            cursor: pointer;
+        }
+
+        .design-visual {
+            height: 240px;
+            background: linear-gradient(45deg, #1a1a1a, #2a2210);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 15px;
+            border: 1px dashed rgba(212, 175, 55, 0.2);
+        }
+
+        .design-visual::before {
+            content: '⚜';
+            font-size: 36px;
+            color: rgba(212, 175, 55, 0.2);
+        }
+
+        .design-info h3 {
+            font-family: 'Cinzel', serif;
+            font-size: 14px;
+            letter-spacing: 1px;
+            color: var(--text-light);
+            margin-bottom: 5px;
+            text-transform: uppercase;
+        }
+
+        .design-info p {
+            font-size: 12px;
+            color: var(--gold-primary);
+            font-weight: 300;
+        }
+
+        /* --- Client Information Form --- */
+        .form-section {
+            background: var(--black-secondary);
+            border: 1px solid rgba(212, 175, 55, 0.2);
+            padding: 40px 30px;
+            max-width: 600px;
+            margin: 40px auto 0 auto;
+            border-radius: 4px;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--gold-primary);
+            margin-bottom: 8px;
+            font-weight: 500;
+        }
+
+        .form-group input, .form-group textarea, .form-group select {
+            background-color: var(--black-primary);
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            padding: 12px 15px;
+            color: var(--text-light);
+            font-family: 'Montserrat', sans-serif;
+            font-size: 14px;
+            border-radius: 2px;
+            width: 100%;
+        }
+
+        .form-group input:focus, .form-group textarea:focus, .form-group select:focus {
+            outline: none;
+            border-color: var(--gold-primary);
+        }
+
+        /* --- Submit Button --- */
+        .submit-btn {
+            background: linear-gradient(90deg, var(--gold-dark), var(--gold-primary));
+            color: var(--black-primary);
+            border: none;
+            padding: 16px;
+            width: 100%;
+            font-family: 'Cinzel', serif;
+            font-size: 16px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            cursor: pointer;
+            margin-top: 10px;
+            transition: all 0.3s ease;
+        }
+
+        .submit-btn:hover {
+            letter-spacing: 4px;
+            background: linear-gradient(90deg, var(--gold-primary), var(--gold-glow));
+        }
+
+        /* --- Footer --- */
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+            border-top: 1px solid rgba(212, 175, 55, 0.1);
+            font-size: 11px;
+            letter-spacing: 1px;
+            color: var(--text-muted);
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header>
+        <div class="logo">Mother of fashion</div>
+        <div class="tagline">Haute Couture & Luxury Design</div>
+    </header>
+
+    <!-- Main Content Container -->
+    <main class="main-container">
+        
+        <h2 class="section-title">The Atelier Collection</h2>
+        <p class="section-subtitle">Check the items below to customize your luxury lookbook request</p>
+
+        <!-- Master Inquiry Form -->
+        <form id="curationForm" action="#" method="POST">
+            
+            <!-- 20 Clean Standalone Checkbox Cards -->
+            <div class="design-grid">
+                
+                <!-- Design 1 -->
+                <div class="design-card">
+                    <input type="checkbox" name="designs" value="Design 01" class="design-checkbox">
+                    <div class="design-visual"></div>
+                    <div class="design-info">
+                        <h3>Imperial Velvet Gown</h3>
+                        <p>Design 01</p>
+                    </div>
+                </div>
+
+                <!-- Design 2 -->
+                <div class="design-card">
+                    <input type="checkbox" name="designs" value="Design 02" class="design-checkbox">
+                    <div class="design-visual"></div>
+                    <div class="design-info">
+                        <h3>Gilded Silk Tuxedo</h3>
+                        <p>Design 02</p>
+                    </div>
+                </div>
+
+                <!-- Design 3 -->
+                <div class="design-card">
+                    <input type="checkbox" name="designs" value="Design 03" class="design-checkbox">
+                    <div class="design-visual"></div>
+                    <div class="design-info">
+                        <h3>Baroque Brocade Corset</h3>
+                        <p>Design 03</p>
+                    </div>
+                </div>
+
+                <!-- Design 4 -->
+                <div class="design-card">
+                    <input type="checkbox" name="designs" value="Design 04" class="design-checkbox">
+                    <div class="design-visual"></div>
+                    <div class="design-info">
+                        <h3>Aurelia Evening Dress</h3>
+                        <p>Design 04</p>
+                    </div>
+                </div>
+
+                <!-- Design 5 -->
+                <div class="design-card">
+                    <input type="checkbox" name="designs" value="Design 05" class="design-checkbox">
+                    <div class="design-visual"></div>
+                    <div class="design-info">
+                        <h3>Midnight Silk Cape</h3>
+                        <p>Design 05</p>
+                    </div>
+                </div>
+
+                <!-- Design 6 -->
+                <div class="design-card">
+                    <input type="checkbox" name="designs" value="Design 06" class="design-checkbox">
+                    <div class="design-visual"></div>
+                    <div class="design-info">
+                        <h3>Luminous Gold Blazer</h3>
+                        <p>Design 06</p>
+                    </div>
+                </div>
+
+                <!-- Design 7 -->
+                <div class="design-card">
+                    <input type="checkbox" name="designs" value="Design 07 - Sovereign Coat" class="design-checkbox">
+                    <div class="design-visual"></div>
+                    <div class="design-info">
+                        <h3>Sovereign Overcoat</h3>
+                        <p>Design 07</p>
+                    </div>
+                </div>
+
+                <!-- Design 8 -->
+                <div class="design-card">
+                    <input type="checkbox" name="designs" value="Design 08 - Luminary Jumpsuit" class="design-checkbox">
+                    <div class="design-visual"></div>
+                    <div class="design-info">
+                        <h3>Luminary Satin Jumpsuit</h3>
+                        <p>Design 08</p>
+                    </div>
+                </div>
+
+                <!-- Design 9 -->
+                <div class="design-card">
+                    <input type="checkbox" name="designs" value="Design 09 - Dynasty Gown" class="design-checkbox">
+                    <div class="design-visual"></div>
+                    <div class="design-info">
+                        <h3>Dynasty Pleated Gown</h3>
+                        <p>Design 09</p>
+                    </div>
+                </div>
+
+                <!-- Design 10 -->
+                <div class="design-card">
+                    <input type="checkbox" name="designs" value="Design 10 - Eclipse Suit" class="design-checkbox">
+                    <div class="design-visual"></div>
+                    <div class="design-info">
+                        <h3>Eclipse Double Suit</h3>
+                        <p>Design 10</p>
+                    </div>
+                </div>
+
+                <!-- Design 11 -->
+                <div class="design-card">
+                    <input type="checkbox" name="designs" value="Design 11 - Majestic Tulle" class="design-checkbox">
+                    <div class="design-visual"></div>
+                    <div class="design-info">
+                        <h3>Majestic Tulle Gown</h3>
+                        <p>Design 11</p>
+                    </div>
+                </div>
+
+                <!-- Design 12 -->
+                <div class="design-card">
+                    <input type="checkbox" name="designs" value="Design 12 - Obsidian Vest" class="design-checkbox">
+                    <div class="design-visual"></div>
+                    <div class="design-info">
+                        <h3>Obsidian Embroidered Vest</h3>
+                        <p>Design 12</p>
+                    </div>
+                </div>
+
+                <!-- Design 13 -->
+                <div class="design-card">
+                    <input type="checkbox" name="designs" value="Design 13 - Solstice Robe" class="design-checkbox">
+                    <div class="design-visual"></div>
+                    <div class="design-info">
+                        <h3>Solstice Silk Robe</h3>
+                        <p>Design 13</p>
+                    </div>
+                </div>
+
+                <!-- Design 14 -->
+                <div class="design-card">
+                    <input type="checkbox" name="designs" value="Design 14 - Aristocrat Trousers" class="design-checkbox">
+                    <div class="design-visual"></div>
+                    <div class="design-info">
+                        <h3>Aristocrat Trousers</h3>
+                        <p>Design 14</p>
+                    </div>
+                </div>
+
+                <!-- Design 15 -->
+                <div class="design-card">
+                    <input type="checkbox" name="designs" value="Design 15 - Celestial Mini" class="design-checkbox">
+                    <div class="design-visual"></div>
+                    <div class="design-info">
+                        <h3>Celestial Metallic Mini</h3>
+                        <p>Design 15</p>
+                    </div>
+                </div>
+
+                <!-- Design 16 -->
+                <div class="design-card">
+                    <input type="checkbox" name="designs" value="Design 16 - Vanguard Trench" class="design-checkbox">
+                    <div class="design-visual"></div>
+                    <div class="design-info">
+                        <h3>Vanguard Leather Trench</h3>
+                        <p>Design 16</p>
+                    </div>
+                </div>
+
+                <!-- Design 17 -->
+                <div class="design-card">
+                    <input type="checkbox" name="designs" value="Design 17 - Solaris Cocktail" class="design-checkbox">
+                    <div class="design-visual"></div>
+                    <div class="design-info">
+                        <h3>Solaris Cocktail Dress</h3>
+                        <p>Design 17</p>
+                    </div>
+                </div>
+
+                <!-- Design 18 -->
+                <div class="design-card">
+                    <input type="checkbox" name="designs" value="Design 18 - Nocturne Kaftan" class="design-checkbox">
+                    <div class="design-visual"></div>
+                    <div class="design-info">
+                        <h3>Nocturne Sheer Kaftan</h3>
+                        <p>Design 18</p>
+                    </div>
+                </div>
+
+                <!-- Design 19 -->
+                <div class="design-card">
+                    <input type="checkbox" name="designs" value="Design 19 - Sovereign Sherwani" class="design-checkbox">
+                    <div class="design-visual"></div>
+                    <div class="design-info">
+                        <h3>Sovereign Silk Sherwani</h3>
+                        <p>Design 19</p>
+                    </div>
+                </div>
+
+                <!-- Design 20 -->
+                <div class="design-card">
+                    <input type="checkbox" name="designs" value="Design 20 - Zenith Runway Gown" class="design-checkbox">
+                    <div class="design-visual"></div>
+                    <div class="design-info">
+                        <h3>Zenith Runway Finale Gown</h3>
+                        <p>Design 20</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Client Profile & Booking Module -->
+            <div id="booking-form" class="form-section">
+                <h3 class="section-title" style="font-size: 22px; margin-bottom: 5px;">Client Profile</h3>
+                <p class="section-subtitle" style="margin-bottom: 35px; font-size: 11px;">Complete details to request an exclusive fitting session</p>
+
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="firstName">First Name *</label>
+                        <input type="text" id="firstName" name="firstName" required placeholder="e.g., omoge">
+                    </div>
+                    <div class="form-group">
+                        <label for="lastName">Last Name *</label>
+                        <input type="text" id="lastName" name="lastName" required placeholder="e.g., Arewa">
+                    </div>
+                    <div class="form-group full-width">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" required placeholder="client@luxury.com">
+                    </div>
+                    <div class="form-group full-width">
+                        <label for="phone">Phone Number *</label>
+                        <input type="tel" id="phone" name="phone" required placeholder="+234 08000000000">
+                    </div>
+                    <div class="form-group full-width">
+                        <label for="experience">Preferred Consultation Format</label>
+                        <select id="experience" name="experience">
+                            <option value="In-Person Atelier Fitting (Lagos/Abuja)">In-Person Atelier Fitting (Lagos/Abuja)</option>
+                            <option value="Private Residence Fitting (VIP Local Service)">Private Residence Fitting (VIP Local Service)</option>
+                            <option value="Virtual Digital Consultation">Virtual Digital Consultation</option>
+                        </select>
+                    </div>
+                    <div class="form-group full-width">
+                        <label for="notes">Sartorial Requirements / Measurements</label>
+                        <textarea id="notes" name="notes" rows="4" placeholder="Share specific fabric, occasion deadline, or sizing requirements..."></textarea>
+                    </div>
+                </div>
+
+                <button type="submit" class="submit-btn">Submit Portfolio Inquiry</button>
+            </div>
+
+        </form>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        &copy; 2026 Mother of fashion. All Rights Reserved. Private & Confidential.
+    </footer>
+
+</body>
+</html>
