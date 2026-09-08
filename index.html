@@ -3,896 +3,358 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mère de la Mode | Mother of Fashion</title>
-    <!-- Google Fonts & Tailwind CSS -->
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <title>MÈRE DE LA MODE | Luxury Couture & Modest Wear</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Paystack Inline JS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Paystack Integration Script Placeholder -->
     <script src="https://js.paystack.co/v1/inline.js"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        gold: {
-                            light: '#fef08a',
-                            DEFAULT: '#d4af37',
-                            dark: '#aa7c11',
-                            metallic: '#dfb95c'
-                        },
-                        darkBg: '#0f0f0f',
-                        cardBg: '#18181b'
-                    },
-                    fontFamily: {
-                        serif: ['"Playfair Display"', 'serif'],
-                        sans: ['"Plus Jakarta Sans"', 'sans-serif']
-                    }
-                }
-            }
-        }
-    </script>
-    <style>
-        .gold-gradient {
-            background: linear-gradient(135deg, #bf953f 0%, #fcf6ba 25%, #b38728 50%, #fbf5b7 75%, #aa771c 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-    </style>
 </head>
-<body class="bg-darkBg text-gray-100 font-sans antialiased selection:bg-gold selection:text-black">
+<body class="bg-stone-50 text-stone-800 font-sans">
 
-    <!-- Header / Navigation -->
-    <header class="sticky top-0 z-50 bg-darkBg/95 backdrop-blur-md border-b border-gold/20">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-24 flex items-center justify-between">
-            <a href="#top" class="flex items-center space-x-4 group cursor-pointer">
-                <div class="w-14 h-14 rounded-full p-[2px] bg-gradient-to-tr from-gold-dark via-gold-light to-gold shadow-lg shadow-gold/10 overflow-hidden flex items-center justify-center group-hover:scale-105 transition-transform">
-                    <img src="IMG_3371.jpeg" alt="Mère de la Mode Logo" class="w-full h-full object-cover rounded-full">
-                </div>
+    <!-- Top Announcement Bar -->
+    <div class="bg-stone-900 text-stone-200 text-xs py-2 text-center tracking-wider">
+        <span><i class="fa-solid fa-truck-fast mr-2"></i> Delivery Lead Time: 5–7 Business Days Nationwide</span>
+    </div>
+
+    <!-- Header Section -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-3">
+                <img src="IMG_3371.jpeg" alt="Mère de la Mode Logo" class="w-12 h-12 rounded-full object-cover border border-amber-600">
                 <div>
-                    <span class="font-serif text-lg sm:text-xl font-bold tracking-wider gold-gradient">MÈRE DE LA MODE</span>
-                    <p class="text-[10px] sm:text-xs tracking-widest text-gold-metallic/80 uppercase">&lt;Mother of Fashion&gt;</p>
+                    <span class="text-xl font-bold tracking-widest text-stone-950 block">MÈRE DE LA MODE</span>
+                    <span class="text-[10px] tracking-widest text-amber-700 uppercase">Luxury Couture & Hijabs</span>
                 </div>
-            </a>
-            <nav class="hidden md:flex items-center space-x-8 text-sm tracking-widest uppercase">
-                <a href="#collection" class="hover:text-gold transition-colors">The Atelier</a>
-                <a href="#hijab-collection" class="hover:text-gold transition-colors">Modest & Hijab</a>
+            </div>
+            <nav class="hidden md:flex space-x-8 text-sm font-medium">
+                <a href="#couture" class="hover:text-amber-700 transition-colors">Couture & Sets</a>
+                <a href="#hijabs" class="hover:text-amber-700 transition-colors">Hijab Collection</a>
             </nav>
-            <div>
-                <button onclick="scrollToCatalog()" class="bg-gradient-to-r from-gold-dark via-gold to-gold-metallic text-black font-semibold text-xs sm:text-sm px-6 py-2.5 rounded-full uppercase tracking-widest shadow-lg shadow-gold/20 hover:opacity-90 transition-all">
-                    Explore Styles
-                </button>
+            <div class="flex items-center space-x-4">
+                <a href="https://wa.me/2348009157289" target="_blank" class="bg-green-600 text-white px-4 py-2 rounded-full text-xs font-semibold flex items-center space-x-2 hover:bg-green-700 transition-colors">
+                    <i class="fa-brands fa-whatsapp text-sm"></i>
+                    <span>WhatsApp Order</span>
+                </a>
             </div>
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section id="top" class="relative min-h-[85vh] flex items-center justify-center text-center px-4 overflow-hidden bg-gradient-to-b from-darkBg via-cardBg to-darkBg">
-        <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#dfb95c_1px,transparent_1px)] [background-size:16px_16px]"></div>
-        <div class="relative max-w-4xl mx-auto space-y-8 z-10">
-            <div class="inline-block p-1 rounded-full border border-gold/40 px-6 py-1.5 mb-2 bg-gold/5">
-                <span class="text-xs uppercase tracking-[0.3em] text-gold-light">Nigerian Luxury Tailoring, New Age Haute Couture & Modest Wear</span>
-            </div>
-            <h1 class="font-serif text-4xl sm:text-6xl lg:text-7xl font-bold tracking-tight leading-tight">
-                Beauty <span class="italic font-normal gold-gradient">Redefined</span>
-            </h1>
-            <p class="text-gray-400 text-base sm:text-xl max-w-2xl mx-auto font-light leading-relaxed">
-                Discover our complete catalog featuring 20 contemporary Nigerian styles and 10 luxurious modern Hijab & modest wear designs. Handcrafted to perfection.
-            </p>
-            <div class="pt-4 flex flex-col sm:flex-row items-center justify-center gap-4">
-                <button onclick="scrollToCatalog()" class="w-full sm:w-auto bg-gold text-black font-bold px-8 py-4 rounded-full uppercase tracking-wider text-sm shadow-xl shadow-gold/20 hover:bg-gold-light transition-all">
-                    Browse All 30 Styles
-                </button>
-                <div class="text-xs text-gold/80 tracking-widest uppercase flex items-center gap-2">
-                    <span class="w-2 h-2 rounded-full bg-gold animate-pulse"></span>
-                    Fast Delivery in 5–7 Business Days
-                </div>
-            </div>
-        </div>
-    </section>
+    <main class="max-w-7xl mx-auto px-4 py-8 space-y-16">
 
-    <!-- Catalog Section 1: Nigerian & New Age Styles (1 to 20) -->
-    <section id="collection" class="py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
-            <span class="text-xs uppercase tracking-[0.3em] text-gold">Category I</span>
-            <h2 class="font-serif text-3xl sm:text-5xl font-bold tracking-wide">Nigerian & New Age Collection</h2>
-            <div class="w-24 h-[1px] bg-gold mx-auto"></div>
-            <p class="text-gray-400 text-sm tracking-wider uppercase">Select from our premier lineup of 20 modern local designs</p>
-        </div>
+        <!-- CATEGORY I: ANKARA, BUBU & LUXURY COUTURE -->
+        <section id="couture">
+            <div class="mb-8 border-b pb-4 border-stone-200">
+                <h2 class="text-2xl font-bold text-stone-900 tracking-wide">Ankara, Bubu & Luxury Wear</h2>
+                <p class="text-sm text-stone-500">Exquisite high-end Nigerian couture and statement apparel.</p>
+            </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <!-- Style 1 -->
-            <div class="bg-cardBg border border-gold/20 rounded-2xl overflow-hidden group hover:border-gold/60 transition-all duration-300 flex flex-col">
-                <div class="relative h-96 overflow-hidden bg-zinc-900">
-                    <img src="https://images.unsplash.com/photo-1566174053879-31528523f8ae?auto=format&fit=crop&q=80&w=800" alt="Royal Asoebi Corset Gown" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                    <div class="absolute top-4 right-4 bg-darkBg/80 backdrop-blur-md border border-gold/30 px-3 py-1 rounded-full text-xs text-gold">Asoebi Luxe</div>
-                </div>
-                <div class="p-6 flex flex-col flex-grow justify-between space-y-6">
-                    <div>
-                        <div class="flex justify-between items-start mb-2">
-                            <h3 class="font-serif text-xl font-bold">Royal Asoebi Corset Gown</h3>
-                            <span class="text-gold font-bold text-base">₦145,000</span>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                <!-- Item 1: 30,000 NGN -->
+                <div class="bg-white rounded-xl shadow-sm overflow-hidden border border-stone-100 flex flex-col group">
+                    <div class="h-80 overflow-hidden relative bg-stone-100">
+                        <img src="IMG_3477.jpeg" alt="Ankara & Aso Oke Bubu Gown" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow justify-between space-y-3">
+                        <div>
+                            <h3 class="font-medium text-stone-900 text-sm mb-1">Ankara & Aso Oke Bubu Gown</h3>
+                            <p class="text-amber-700 font-bold text-base">₦30,000</p>
                         </div>
-                        <p class="text-gray-400 text-sm leading-relaxed">Structured boned corset with dramatic mesh detailing and sweeping mermaid hemline.</p>
+                        <button onclick="checkoutItem('Ankara & Aso Oke Bubu Gown', 30000)" class="w-full bg-stone-900 text-white py-2 rounded-lg text-xs font-semibold hover:bg-amber-700 transition-colors">Order via WhatsApp</button>
                     </div>
-                    <button onclick="openOrderModal('Royal Asoebi Corset Gown', 145000)" class="w-full bg-gold/10 border border-gold text-gold font-semibold py-3 rounded-xl uppercase tracking-wider text-xs hover:bg-gold hover:text-black transition-all">
-                        Customize & Order
-                    </button>
                 </div>
-            </div>
 
-            <!-- Style 2 -->
-            <div class="bg-cardBg border border-gold/20 rounded-2xl overflow-hidden group hover:border-gold/60 transition-all duration-300 flex flex-col">
-                <div class="relative h-96 overflow-hidden bg-zinc-900">
-                    <img src="https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?auto=format&fit=crop&q=80&w=800" alt="Modern Ankara Maxi Dress" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                    <div class="absolute top-4 right-4 bg-darkBg/80 backdrop-blur-md border border-gold/30 px-3 py-1 rounded-full text-xs text-gold">New Age</div>
-                </div>
-                <div class="p-6 flex flex-col flex-grow justify-between space-y-6">
-                    <div>
-                        <div class="flex justify-between items-start mb-2">
-                            <h3 class="font-serif text-xl font-bold">Modern Ankara Maxi Dress</h3>
-                            <span class="text-gold font-bold text-base">₦85,000</span>
+                <!-- Item 2: 30,000 NGN -->
+                <div class="bg-white rounded-xl shadow-sm overflow-hidden border border-stone-100 flex flex-col group">
+                    <div class="h-80 overflow-hidden relative bg-stone-100">
+                        <img src="IMG_3478.jpeg" alt="Ankara Bubu Gown" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow justify-between space-y-3">
+                        <div>
+                            <h3 class="font-medium text-stone-900 text-sm mb-1">Ankara Bubu Gown</h3>
+                            <p class="text-amber-700 font-bold text-base">₦30,000</p>
                         </div>
-                        <p class="text-gray-400 text-sm leading-relaxed">Tiered Ankara masterpiece featuring puff sleeves and an elegant cinched waistline.</p>
+                        <button onclick="checkoutItem('Ankara Bubu Gown', 30000)" class="w-full bg-stone-900 text-white py-2 rounded-lg text-xs font-semibold hover:bg-amber-700 transition-colors">Order via WhatsApp</button>
                     </div>
-                    <button onclick="openOrderModal('Modern Ankara Maxi Dress', 85000)" class="w-full bg-gold/10 border border-gold text-gold font-semibold py-3 rounded-xl uppercase tracking-wider text-xs hover:bg-gold hover:text-black transition-all">
-                        Customize & Order
-                    </button>
                 </div>
-            </div>
 
-            <!-- Style 3 -->
-            <div class="bg-cardBg border border-gold/20 rounded-2xl overflow-hidden group hover:border-gold/60 transition-all duration-300 flex flex-col">
-                <div class="relative h-96 overflow-hidden bg-zinc-900">
-                    <img src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&q=80&w=800" alt="Embroidered Silk Boubou" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                    <div class="absolute top-4 right-4 bg-darkBg/80 backdrop-blur-md border border-gold/30 px-3 py-1 rounded-full text-xs text-gold">Executive</div>
-                </div>
-                <div class="p-6 flex flex-col flex-grow justify-between space-y-6">
-                    <div>
-                        <div class="flex justify-between items-start mb-2">
-                            <h3 class="font-serif text-xl font-bold">Embroidered Silk Boubou</h3>
-                            <span class="text-gold font-bold text-base">₦95,000</span>
+                <!-- Item 3: 30,000 NGN -->
+                <div class="bg-white rounded-xl shadow-sm overflow-hidden border border-stone-100 flex flex-col group">
+                    <div class="h-80 overflow-hidden relative bg-stone-100">
+                        <img src="IMG_3480.jpeg" alt="Long Ankara bubu gown" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow justify-between space-y-3">
+                        <div>
+                            <h3 class="font-medium text-stone-900 text-sm mb-1">Long Ankara bubu gown</h3>
+                            <p class="text-amber-700 font-bold text-base">₦30,000</p>
                         </div>
-                        <p class="text-gray-400 text-sm leading-relaxed">Flowing rich-flowing duchess silk boubou with intricate stone stonework around the neck.</p>
+                        <button onclick="checkoutItem('Long Ankara bubu gown', 30000)" class="w-full bg-stone-900 text-white py-2 rounded-lg text-xs font-semibold hover:bg-amber-700 transition-colors">Order via WhatsApp</button>
                     </div>
-                    <button onclick="openOrderModal('Embroidered Silk Boubou', 95000)" class="w-full bg-gold/10 border border-gold text-gold font-semibold py-3 rounded-xl uppercase tracking-wider text-xs hover:bg-gold hover:text-black transition-all">
-                        Customize & Order
-                    </button>
                 </div>
-            </div>
 
-            <!-- Style 4 -->
-            <div class="bg-cardBg border border-gold/20 rounded-2xl overflow-hidden group hover:border-gold/60 transition-all duration-300 flex flex-col">
-                <div class="relative h-96 overflow-hidden bg-zinc-900">
-                    <img src="https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?auto=format&fit=crop&q=80&w=800" alt="Chic Ankara Two-Piece Set" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                    <div class="absolute top-4 right-4 bg-darkBg/80 backdrop-blur-md border border-gold/30 px-3 py-1 rounded-full text-xs text-gold">Street Luxe</div>
-                </div>
-                <div class="p-6 flex flex-col flex-grow justify-between space-y-6">
-                    <div>
-                        <div class="flex justify-between items-start mb-2">
-                            <h3 class="font-serif text-xl font-bold">Chic Ankara Two-Piece Set</h3>
-                            <span class="text-gold font-bold text-base">₦75,000</span>
+                <!-- Item 4: 30,000 NGN -->
+                <div class="bg-white rounded-xl shadow-sm overflow-hidden border border-stone-100 flex flex-col group">
+                    <div class="h-80 overflow-hidden relative bg-stone-100">
+                        <img src="IMG_3481.jpeg" alt="Long Ankara bubu gown" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow justify-between space-y-3">
+                        <div>
+                            <h3 class="font-medium text-stone-900 text-sm mb-1">Long Ankara bubu gown</h3>
+                            <p class="text-amber-700 font-bold text-base">₦30,000</p>
                         </div>
-                        <p class="text-gray-400 text-sm leading-relaxed">Tailored crop blazer paired with high-waisted flared trousers in vibrant print.</p>
+                        <button onclick="checkoutItem('Long Ankara bubu gown', 30000)" class="w-full bg-stone-900 text-white py-2 rounded-lg text-xs font-semibold hover:bg-amber-700 transition-colors">Order via WhatsApp</button>
                     </div>
-                    <button onclick="openOrderModal('Chic Ankara Two-Piece Set', 75000)" class="w-full bg-gold/10 border border-gold text-gold font-semibold py-3 rounded-xl uppercase tracking-wider text-xs hover:bg-gold hover:text-black transition-all">
-                        Customize & Order
-                    </button>
                 </div>
-            </div>
 
-            <!-- Style 5 -->
-            <div class="bg-cardBg border border-gold/20 rounded-2xl overflow-hidden group hover:border-gold/60 transition-all duration-300 flex flex-col">
-                <div class="relative h-96 overflow-hidden bg-zinc-900">
-                    <img src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&fit=crop&q=80&w=800" alt="Velvet & Lace Fusion Gown" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                    <div class="absolute top-4 right-4 bg-darkBg/80 backdrop-blur-md border border-gold/30 px-3 py-1 rounded-full text-xs text-gold">Owanbe Ready</div>
-                </div>
-                <div class="p-6 flex flex-col flex-grow justify-between space-y-6">
-                    <div>
-                        <div class="flex justify-between items-start mb-2">
-                            <h3 class="font-serif text-xl font-bold">Velvet & Lace Fusion Gown</h3>
-                            <span class="text-gold font-bold text-base">₦130,000</span>
+                <!-- Item 5: 25,000 NGN -->
+                <div class="bg-white rounded-xl shadow-sm overflow-hidden border border-stone-100 flex flex-col group">
+                    <div class="h-80 overflow-hidden relative bg-stone-100">
+                        <img src="IMG_3482.jpeg" alt="Short Ankara bubu gown" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow justify-between space-y-3">
+                        <div>
+                            <h3 class="font-medium text-stone-900 text-sm mb-1">Short Ankara bubu gown</h3>
+                            <p class="text-amber-700 font-bold text-base">₦25,000</p>
                         </div>
-                        <p class="text-gray-400 text-sm leading-relaxed">Luxurious blend of soft stretch velvet body with French corded lace overlay sleeves.</p>
+                        <button onclick="checkoutItem('Short Ankara bubu gown', 25000)" class="w-full bg-stone-900 text-white py-2 rounded-lg text-xs font-semibold hover:bg-amber-700 transition-colors">Order via WhatsApp</button>
                     </div>
-                    <button onclick="openOrderModal('Velvet & Lace Fusion Gown', 130000)" class="w-full bg-gold/10 border border-gold text-gold font-semibold py-3 rounded-xl uppercase tracking-wider text-xs hover:bg-gold hover:text-black transition-all">
-                        Customize & Order
-                    </button>
                 </div>
-            </div>
 
-            <!-- Style 6 -->
-            <div class="bg-cardBg border border-gold/20 rounded-2xl overflow-hidden group hover:border-gold/60 transition-all duration-300 flex flex-col">
-                <div class="relative h-96 overflow-hidden bg-zinc-900">
-                    <img src="https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&q=80&w=800" alt="Adire Casual Midi Dress" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                    <div class="absolute top-4 right-4 bg-darkBg/80 backdrop-blur-md border border-gold/30 px-3 py-1 rounded-full text-xs text-gold">Contemporary</div>
-                </div>
-                <div class="p-6 flex flex-col flex-grow justify-between space-y-6">
-                    <div>
-                        <div class="flex justify-between items-start mb-2">
-                            <h3 class="font-serif text-xl font-bold">Adire Casual Midi Dress</h3>
-                            <span class="text-gold font-bold text-base">₦65,000</span>
+                <!-- Item 6: 25,000 NGN -->
+                <div class="bg-white rounded-xl shadow-sm overflow-hidden border border-stone-100 flex flex-col group">
+                    <div class="h-80 overflow-hidden relative bg-stone-100">
+                        <img src="IMG_3483.jpeg" alt="Women's Black Ankara Patch Kaftan Bubu Gown" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow justify-between space-y-3">
+                        <div>
+                            <h3 class="font-medium text-stone-900 text-sm mb-1">Women's Black Ankara Patch Kaftan Bubu Gown – Free Size, Comfortable Maxi Dress</h3>
+                            <p class="text-amber-700 font-bold text-base">₦25,000</p>
                         </div>
-                        <p class="text-gray-400 text-sm leading-relaxed">Hand-tie dyed indigenous Adire cotton cut into a trendy wrap-style midi dress.</p>
+                        <button onclick="checkoutItem('Women\'s Black Ankara Patch Kaftan Bubu Gown', 25000)" class="w-full bg-stone-900 text-white py-2 rounded-lg text-xs font-semibold hover:bg-amber-700 transition-colors">Order via WhatsApp</button>
                     </div>
-                    <button onclick="openOrderModal('Adire Casual Midi Dress', 65000)" class="w-full bg-gold/10 border border-gold text-gold font-semibold py-3 rounded-xl uppercase tracking-wider text-xs hover:bg-gold hover:text-black transition-all">
-                        Customize & Order
-                    </button>
                 </div>
-            </div>
 
-            <!-- Style 7 -->
-            <div class="bg-cardBg border border-gold/20 rounded-2xl overflow-hidden group hover:border-gold/60 transition-all duration-300 flex flex-col">
-                <div class="relative h-96 overflow-hidden bg-zinc-900">
-                    <img src="https://images.unsplash.com/photo-1550639525-c97d455acf70?auto=format&fit=crop&q=80&w=800" alt="Ankara Peplum Set" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                    <div class="absolute top-4 right-4 bg-darkBg/80 backdrop-blur-md border border-gold/30 px-3 py-1 rounded-full text-xs text-gold">Classic Shift</div>
-                </div>
-                <div class="p-6 flex flex-col flex-grow justify-between space-y-6">
-                    <div>
-                        <div class="flex justify-between items-start mb-2">
-                            <h3 class="font-serif text-xl font-bold">Ankara Peplum Set</h3>
-                            <span class="text-gold font-bold text-base">₦80,000</span>
+                <!-- Item 7: 25,000 NGN -->
+                <div class="bg-white rounded-xl shadow-sm overflow-hidden border border-stone-100 flex flex-col group">
+                    <div class="h-80 overflow-hidden relative bg-stone-100">
+                        <img src="IMG_3484.jpeg" alt="Ankara Bubu Gown" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow justify-between space-y-3">
+                        <div>
+                            <h3 class="font-medium text-stone-900 text-sm mb-1">Ankara Bubu Gown</h3>
+                            <p class="text-amber-700 font-bold text-base">₦25,000</p>
                         </div>
-                        <p class="text-gray-400 text-sm leading-relaxed">Structured peplum blouse with exaggerated shoulders matched with a slim pencil skirt.</p>
+                        <button onclick="checkoutItem('Ankara Bubu Gown (Fringed)', 25000)" class="w-full bg-stone-900 text-white py-2 rounded-lg text-xs font-semibold hover:bg-amber-700 transition-colors">Order via WhatsApp</button>
                     </div>
-                    <button onclick="openOrderModal('Ankara Peplum Set', 80000)" class="w-full bg-gold/10 border border-gold text-gold font-semibold py-3 rounded-xl uppercase tracking-wider text-xs hover:bg-gold hover:text-black transition-all">
-                        Customize & Order
-                    </button>
                 </div>
-            </div>
 
-            <!-- Style 8 -->
-            <div class="bg-cardBg border border-gold/20 rounded-2xl overflow-hidden group hover:border-gold/60 transition-all duration-300 flex flex-col">
-                <div class="relative h-96 overflow-hidden bg-zinc-900">
-                    <img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&q=80&w=800" alt="Traditional Iro & Buba Luxury" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                    <div class="absolute top-4 right-4 bg-darkBg/80 backdrop-blur-md border border-gold/30 px-3 py-1 rounded-full text-xs text-gold">Bridal Custom</div>
-                </div>
-                <div class="p-6 flex flex-col flex-grow justify-between space-y-6">
-                    <div>
-                        <div class="flex justify-between items-start mb-2">
-                            <h3 class="font-serif text-xl font-bold">Traditional Iro & Buba Luxury</h3>
-                            <span class="text-gold font-bold text-base">₦160,000</span>
+                <!-- Item 8: 25,000 NGN -->
+                <div class="bg-white rounded-xl shadow-sm overflow-hidden border border-stone-100 flex flex-col group">
+                    <div class="h-80 overflow-hidden relative bg-stone-100">
+                        <img src="IMG_3485.jpeg" alt="Women's Pink Ankara Patch Kaftan Bubu Gown" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow justify-between space-y-3">
+                        <div>
+                            <h3 class="font-medium text-stone-900 text-sm mb-1">Women's Pink Ankara Patch Kaftan Bubu Gown – Free Size, Comfortable Maxi Dress</h3>
+                            <p class="text-amber-700 font-bold text-base">₦25,000</p>
                         </div>
-                        <p class="text-gray-400 text-sm leading-relaxed">Redefined wrapper and embroidered blouse set crafted with shimmering organza fabric.</p>
+                        <button onclick="checkoutItem('Women\'s Pink Ankara Patch Kaftan Bubu Gown', 25000)" class="w-full bg-stone-900 text-white py-2 rounded-lg text-xs font-semibold hover:bg-amber-700 transition-colors">Order via WhatsApp</button>
                     </div>
-                    <button onclick="openOrderModal('Traditional Iro & Buba Luxury', 160000)" class="w-full bg-gold/10 border border-gold text-gold font-semibold py-3 rounded-xl uppercase tracking-wider text-xs hover:bg-gold hover:text-black transition-all">
-                        Customize & Order
-                    </button>
                 </div>
-            </div>
 
-            <!-- Style 9 -->
-            <div class="bg-cardBg border border-gold/20 rounded-2xl overflow-hidden group hover:border-gold/60 transition-all duration-300 flex flex-col">
-                <div class="relative h-96 overflow-hidden bg-zinc-900">
-                    <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=800" alt="Monochromatic Kimono Boubou" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                    <div class="absolute top-4 right-4 bg-darkBg/80 backdrop-blur-md border border-gold/30 px-3 py-1 rounded-full text-xs text-gold">Lounge Chic</div>
-                </div>
-                <div class="p-6 flex flex-col flex-grow justify-between space-y-6">
-                    <div>
-                        <div class="flex justify-between items-start mb-2">
-                            <h3 class="font-serif text-xl font-bold">Monochromatic Kimono Boubou</h3>
-                            <span class="text-gold font-bold text-base">₦70,000</span>
+                <!-- Item 9: 50,000 NGN -->
+                <div class="bg-white rounded-xl shadow-sm overflow-hidden border border-stone-100 flex flex-col group">
+                    <div class="h-80 overflow-hidden relative bg-stone-100">
+                        <img src="IMG_3486.jpeg" alt="Classy Ladies Printed 2 Piece Set" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow justify-between space-y-3">
+                        <div>
+                            <h3 class="font-medium text-stone-900 text-sm mb-1">Classy Ladies Printed 2 Piece Set, Stylish Top & Wide Leg Trousers, Ladies Outfit</h3>
+                            <p class="text-amber-700 font-bold text-base">₦50,000</p>
                         </div>
-                        <p class="text-gray-400 text-sm leading-relaxed">Relaxed yet sophisticated draped boubou with wide kimono sleeves and crystal trims.</p>
+                        <button onclick="checkoutItem('Classy Ladies Printed 2 Piece Set', 50000)" class="w-full bg-stone-900 text-white py-2 rounded-lg text-xs font-semibold hover:bg-amber-700 transition-colors">Order via WhatsApp</button>
                     </div>
-                    <button onclick="openOrderModal('Monochromatic Kimono Boubou', 70000)" class="w-full bg-gold/10 border border-gold text-gold font-semibold py-3 rounded-xl uppercase tracking-wider text-xs hover:bg-gold hover:text-black transition-all">
-                        Customize & Order
-                    </button>
                 </div>
-            </div>
 
-            <!-- Style 10 -->
-            <div class="bg-cardBg border border-gold/20 rounded-2xl overflow-hidden group hover:border-gold/60 transition-all duration-300 flex flex-col">
-                <div class="relative h-96 overflow-hidden bg-zinc-900">
-                    <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&q=80&w=800" alt="Asymmetrical Ankara Cocktail" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                    <div class="absolute top-4 right-4 bg-darkBg/80 backdrop-blur-md border border-gold/30 px-3 py-1 rounded-full text-xs text-gold">Party Ready</div>
-                </div>
-                <div class="p-6 flex flex-col flex-grow justify-between space-y-6">
-                    <div>
-                        <div class="flex justify-between items-start mb-2">
-                            <h3 class="font-serif text-xl font-bold">Asymmetrical Ankara Cocktail</h3>
-                            <span class="text-gold font-bold text-base">₦90,000</span>
+                <!-- Item 10: 50,000 NGN -->
+                <div class="bg-white rounded-xl shadow-sm overflow-hidden border border-stone-100 flex flex-col group">
+                    <div class="h-80 overflow-hidden relative bg-stone-100">
+                        <img src="IMG_3487.jpeg" alt="Elegant Women's 2-Piece Trouser & Jacket Set" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow justify-between space-y-3">
+                        <div>
+                            <h3 class="font-medium text-stone-900 text-sm mb-1">Elegant Women's 2-Piece Trouser & Jacket Set – Classy Office Wear Outfit</h3>
+                            <p class="text-amber-700 font-bold text-base">₦50,000</p>
                         </div>
-                        <p class="text-gray-400 text-sm leading-relaxed">One-shoulder tailored mini dress featuring bold geometric Ankara print placement.</p>
+                        <button onclick="checkoutItem('Elegant Women\'s 2-Piece Trouser & Jacket Set', 50000)" class="w-full bg-stone-900 text-white py-2 rounded-lg text-xs font-semibold hover:bg-amber-700 transition-colors">Order via WhatsApp</button>
                     </div>
-                    <button onclick="openOrderModal('Asymmetrical Ankara Cocktail', 90000)" class="w-full bg-gold/10 border border-gold text-gold font-semibold py-3 rounded-xl uppercase tracking-wider text-xs hover:bg-gold hover:text-black transition-all">
-                        Customize & Order
-                    </button>
                 </div>
-            </div>
 
-            <!-- Style 11 -->
-            <div class="bg-cardBg border border-gold/20 rounded-2xl overflow-hidden group hover:border-gold/60 transition-all duration-300 flex flex-col">
-                <div class="relative h-96 overflow-hidden bg-zinc-900">
-                    <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&q=80&w=800" alt="Sequins & Crêpe Asoebi Gown" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                    <div class="absolute top-4 right-4 bg-darkBg/80 backdrop-blur-md border border-gold/30 px-3 py-1 rounded-full text-xs text-gold">Red Carpet</div>
-                </div>
-                <div class="p-6 flex flex-col flex-grow justify-between space-y-6">
-                    <div>
-                        <div class="flex justify-between items-start mb-2">
-                            <h3 class="font-serif text-xl font-bold">Sequins & Crêpe Asoebi Gown</h3>
-                            <span class="text-gold font-bold text-base">₦150,000</span>
+                <!-- Item 11: 50,000 NGN -->
+                <div class="bg-white rounded-xl shadow-sm overflow-hidden border border-stone-100 flex flex-col group">
+                    <div class="h-80 overflow-hidden relative bg-stone-100">
+                        <img src="IMG_3488.jpeg" alt="Ladies Plain Stripped Skirt & Blouse" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow justify-between space-y-3">
+                        <div>
+                            <h3 class="font-medium text-stone-900 text-sm mb-1">Ladies Plain Stripped Skirt & Blouse- Black & White</h3>
+                            <p class="text-amber-700 font-bold text-base">₦50,000</p>
                         </div>
-                        <p class="text-gray-400 text-sm leading-relaxed">Dazzling sequin bodice transitioning into heavy matte crêpe with thigh-high slit.</p>
+                        <button onclick="checkoutItem('Ladies Plain Stripped Skirt & Blouse', 50000)" class="w-full bg-stone-900 text-white py-2 rounded-lg text-xs font-semibold hover:bg-amber-700 transition-colors">Order via WhatsApp</button>
                     </div>
-                    <button onclick="openOrderModal('Sequins & Crêpe Asoebi Gown', 150000)" class="w-full bg-gold/10 border border-gold text-gold font-semibold py-3 rounded-xl uppercase tracking-wider text-xs hover:bg-gold hover:text-black transition-all">
-                        Customize & Order
-                    </button>
                 </div>
-            </div>
 
-            <!-- Style 12 -->
-            <div class="bg-cardBg border border-gold/20 rounded-2xl overflow-hidden group hover:border-gold/60 transition-all duration-300 flex flex-col">
-                <div class="relative h-96 overflow-hidden bg-zinc-900">
-                    <img src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=crop&q=80&w=800" alt="Adire Luxury Jogger Set" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                    <div class="absolute top-4 right-4 bg-darkBg/80 backdrop-blur-md border border-gold/30 px-3 py-1 rounded-full text-xs text-gold">Streetwear</div>
-                </div>
-                <div class="p-6 flex flex-col flex-grow justify-between space-y-6">
-                    <div>
-                        <div class="flex justify-between items-start mb-2">
-                            <h3 class="font-serif text-xl font-bold">Adire Luxury Jogger Set</h3>
-                            <span class="text-gold font-bold text-base">₦68,000</span>
+                <!-- Item 12: 15,000 NGN -->
+                <div class="bg-white rounded-xl shadow-sm overflow-hidden border border-stone-100 flex flex-col group">
+                    <div class="h-80 overflow-hidden relative bg-stone-100">
+                        <img src="IMG_3489.jpeg" alt="Gorgeous and beautiful Ankara Palazzo" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow justify-between space-y-3">
+                        <div>
+                            <h3 class="font-medium text-stone-900 text-sm mb-1">Gorgeous and beautiful Ankara Palazzo for ladies</h3>
+                            <p class="text-amber-700 font-bold text-base">₦15,000</p>
                         </div>
-                        <p class="text-gray-400 text-sm leading-relaxed">Trendy hooded sweatshirt and matching joggers crafted from premium indigo Adire fabric.</p>
+                        <button onclick="checkoutItem('Gorgeous Ankara Palazzo', 15000)" class="w-full bg-stone-900 text-white py-2 rounded-lg text-xs font-semibold hover:bg-amber-700 transition-colors">Order via WhatsApp</button>
                     </div>
-                    <button onclick="openOrderModal('Adire Luxury Jogger Set', 68000)" class="w-full bg-gold/10 border border-gold text-gold font-semibold py-3 rounded-xl uppercase tracking-wider text-xs hover:bg-gold hover:text-black transition-all">
-                        Customize & Order
-                    </button>
                 </div>
-            </div>
 
-            <!-- Style 13 -->
-            <div class="bg-cardBg border border-gold/20 rounded-2xl overflow-hidden group hover:border-gold/60 transition-all duration-300 flex flex-col">
-                <div class="relative h-96 overflow-hidden bg-zinc-900">
-                    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=800" alt="Off-Shoulder Ankara Midi" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                    <div class="absolute top-4 right-4 bg-darkBg/80 backdrop-blur-md border border-gold/30 px-3 py-1 rounded-full text-xs text-gold">Chic Casual</div>
-                </div>
-                <div class="p-6 flex flex-col flex-grow justify-between space-y-6">
-                    <div>
-                        <div class="flex justify-between items-start mb-2">
-                            <h3 class="font-serif text-xl font-bold">Off-Shoulder Ankara Midi</h3>
-                            <span class="text-gold font-bold text-base">₦78,000</span>
+                <!-- Item 13: 15,000 NGN -->
+                <div class="bg-white rounded-xl shadow-sm overflow-hidden border border-stone-100 flex flex-col group">
+                    <div class="h-80 overflow-hidden relative bg-stone-100">
+                        <img src="IMG_3490.jpeg" alt="Nex Two piece Top and Trousers pants set" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow justify-between space-y-3">
+                        <div>
+                            <h3 class="font-medium text-stone-900 text-sm mb-1">Nex Two piece Top and Trousers pants set for ladies -brown</h3>
+                            <p class="text-amber-700 font-bold text-base">₦15,000</p>
                         </div>
-                        <p class="text-gray-400 text-sm leading-relaxed">Sweetheart neckline midi dress with flared hem, tailored precisely to accentuate posture.</p>
+                        <button onclick="checkoutItem('Nex Two piece Set - brown', 15000)" class="w-full bg-stone-900 text-white py-2 rounded-lg text-xs font-semibold hover:bg-amber-700 transition-colors">Order via WhatsApp</button>
                     </div>
-                    <button onclick="openOrderModal('Off-Shoulder Ankara Midi', 78000)" class="w-full bg-gold/10 border border-gold text-gold font-semibold py-3 rounded-xl uppercase tracking-wider text-xs hover:bg-gold hover:text-black transition-all">
-                        Customize & Order
-                    </button>
                 </div>
             </div>
+        </section>
 
-            <!-- Style 14 -->
-            <div class="bg-cardBg border border-gold/20 rounded-2xl overflow-hidden group hover:border-gold/60 transition-all duration-300 flex flex-col">
-                <div class="relative h-96 overflow-hidden bg-zinc-900">
-                    <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=800" alt="Empire Cut Ankara Gown" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                    <div class="absolute top-4 right-4 bg-darkBg/80 backdrop-blur-md border border-gold/30 px-3 py-1 rounded-full text-xs text-gold">Elegance</div>
-                </div>
-                <div class="p-6 flex flex-col flex-grow justify-between space-y-6">
-                    <div>
-                        <div class="flex justify-between items-start mb-2">
-                            <h3 class="font-serif text-xl font-bold">Empire Cut Ankara Gown</h3>
-                            <span class="text-gold font-bold text-base">₦95,000</span>
+        <!-- CATEGORY II: HIJAB COLLECTION -->
+        <section id="hijabs" class="pt-8 border-t border-stone-200">
+            <div class="mb-8 border-b pb-4 border-stone-200">
+                <h2 class="text-2xl font-bold text-stone-900 tracking-wide">Hijab & Modest Wear Collection</h2>
+                <p class="text-sm text-stone-500">Premium wraps, scarves, and head coverings tailored for elegance.</p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                <!-- Hijab 1 -->
+                <div class="bg-white rounded-xl shadow-sm overflow-hidden border border-stone-100 flex flex-col group">
+                    <div class="h-80 overflow-hidden relative bg-stone-100">
+                        <img src="IMG_3491.jpeg" alt="Floral Print Long Scarf Shawl Cream" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow justify-between space-y-3">
+                        <div>
+                            <h3 class="font-medium text-stone-900 text-sm mb-1">Women's Floral Print Long Scarf Shawl Soft Polyester Hijab Wrap with Tassels Cream 200×70cm</h3>
+                            <p class="text-amber-700 font-bold text-base">₦10,000</p>
                         </div>
-                        <p class="text-gray-400 text-sm leading-relaxed">Flowing floor-length gown featuring high waistline and dramatic bell sleeves.</p>
+                        <button onclick="checkoutItem('Floral Print Long Scarf Shawl Cream', 10000)" class="w-full bg-stone-900 text-white py-2 rounded-lg text-xs font-semibold hover:bg-amber-700 transition-colors">Order via WhatsApp</button>
                     </div>
-                    <button onclick="openOrderModal('Empire Cut Ankara Gown', 95000)" class="w-full bg-gold/10 border border-gold text-gold font-semibold py-3 rounded-xl uppercase tracking-wider text-xs hover:bg-gold hover:text-black transition-all">
-                        Customize & Order
-                    </button>
                 </div>
-            </div>
 
-            <!-- Style 15 -->
-            <div class="bg-cardBg border border-gold/20 rounded-2xl overflow-hidden group hover:border-gold/60 transition-all duration-300 flex flex-col">
-                <div class="relative h-96 overflow-hidden bg-zinc-900">
-                    <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&q=80&w=800" alt="Structured Cape Boubou" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                    <div class="absolute top-4 right-4 bg-darkBg/80 backdrop-blur-md border border-gold/30 px-3 py-1 rounded-full text-xs text-gold">Royal Trend</div>
-                </div>
-                <div class="p-6 flex flex-col flex-grow justify-between space-y-6">
-                    <div>
-                        <div class="flex justify-between items-start mb-2">
-                            <h3 class="font-serif text-xl font-bold">Structured Cape Boubou</h3>
-                            <span class="text-gold font-bold text-base">₦110,000</span>
+                <!-- Hijab 2 -->
+                <div class="bg-white rounded-xl shadow-sm overflow-hidden border border-stone-100 flex flex-col group">
+                    <div class="h-80 overflow-hidden relative bg-stone-100">
+                        <img src="IMG_3492.jpeg" alt="Crinkle Cotton Linen Hijab Purple" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow justify-between space-y-3">
+                        <div>
+                            <h3 class="font-medium text-stone-900 text-sm mb-1">Women's Hijab Muslim Crinkle Cotton Linen Hijab Hair Head Wrap Scarf Long Shawls Scarves Turban with Tassel Edge</h3>
+                            <p class="text-amber-700 font-bold text-base">₦15,000</p>
                         </div>
-                        <p class="text-gray-400 text-sm leading-relaxed">Rich chiffon boubou enhanced with an attached royal cape detailed with gold embroidery.</p>
+                        <button onclick="checkoutItem('Crinkle Cotton Linen Hijab Purple', 15000)" class="w-full bg-stone-900 text-white py-2 rounded-lg text-xs font-semibold hover:bg-amber-700 transition-colors">Order via WhatsApp</button>
                     </div>
-                    <button onclick="openOrderModal('Structured Cape Boubou', 110000)" class="w-full bg-gold/10 border border-gold text-gold font-semibold py-3 rounded-xl uppercase tracking-wider text-xs hover:bg-gold hover:text-black transition-all">
-                        Customize & Order
-                    </button>
                 </div>
-            </div>
 
-            <!-- Style 16 -->
-            <div class="bg-cardBg border border-gold/20 rounded-2xl overflow-hidden group hover:border-gold/60 transition-all duration-300 flex flex-col">
-                <div class="relative h-96 overflow-hidden bg-zinc-900">
-                    <img src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?auto=format&fit=crop&q=80&w=800" alt="Corset & Kimono Jacket Set" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                    <div class="absolute top-4 right-4 bg-darkBg/80 backdrop-blur-md border border-gold/30 px-3 py-1 rounded-full text-xs text-gold">New Age Fusion</div>
-                </div>
-                <div class="p-6 flex flex-col flex-grow justify-between space-y-6">
-                    <div>
-                        <div class="flex justify-between items-start mb-2">
-                            <h3 class="font-serif text-xl font-bold">Corset & Kimono Jacket Set</h3>
-                            <span class="text-gold font-bold text-base">₦115,000</span>
+                <!-- Hijab 3 -->
+                <div class="bg-white rounded-xl shadow-sm overflow-hidden border border-stone-100 flex flex-col group">
+                    <div class="h-80 overflow-hidden relative bg-stone-100">
+                        <img src="IMG_3493.jpeg" alt="3 in 1 Muslimah Khimar Hijab" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow justify-between space-y-3">
+                        <div>
+                            <h3 class="font-medium text-stone-900 text-sm mb-1">3 in 1 Muslimah Khimar Hijab – Elegant Lightweight Abaya Style</h3>
+                            <p class="text-amber-700 font-bold text-base">₦35,000</p>
                         </div>
-                        <p class="text-gray-400 text-sm leading-relaxed">Underbust corset paired with wide-leg pants and a matching flowing kimono wrap.</p>
+                        <button onclick="checkoutItem('3 in 1 Muslimah Khimar Hijab', 35000)" class="w-full bg-stone-900 text-white py-2 rounded-lg text-xs font-semibold hover:bg-amber-700 transition-colors">Order via WhatsApp</button>
                     </div>
-                    <button onclick="openOrderModal('Corset & Kimono Jacket Set', 115000)" class="w-full bg-gold/10 border border-gold text-gold font-semibold py-3 rounded-xl uppercase tracking-wider text-xs hover:bg-gold hover:text-black transition-all">
-                        Customize & Order
-                    </button>
                 </div>
-            </div>
 
-            <!-- Style 17 -->
-            <div class="bg-cardBg border border-gold/20 rounded-2xl overflow-hidden group hover:border-gold/60 transition-all duration-300 flex flex-col">
-                <div class="relative h-96 overflow-hidden bg-zinc-900">
-                    <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&q=80&w=800" alt="Brocade Tailored Suit Dress" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                    <div class="absolute top-4 right-4 bg-darkBg/80 backdrop-blur-md border border-gold/30 px-3 py-1 rounded-full text-xs text-gold">Power Chic</div>
-                </div>
-                <div class="p-6 flex flex-col flex-grow justify-between space-y-6">
-                    <div>
-                        <div class="flex justify-between items-start mb-2">
-                            <h3 class="font-serif text-xl font-bold">Brocade Tailored Suit Dress</h3>
-                            <span class="text-gold font-bold text-base">₦125,000</span>
+                <!-- Hijab 4 -->
+                <div class="bg-white rounded-xl shadow-sm overflow-hidden border border-stone-100 flex flex-col group">
+                    <div class="h-80 overflow-hidden relative bg-stone-100">
+                        <img src="IMG_3494.jpeg" alt="Premium Jersey Hijab Green" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow justify-between space-y-3">
+                        <div>
+                            <h3 class="font-medium text-stone-900 text-sm mb-1">Premium Jersey Hijab for Women Viscose Scarf Lightweight Muslim Hijabs Long Shawl Islamic Scarves</h3>
+                            <p class="text-amber-700 font-bold text-base">₦12,000</p>
                         </div>
-                        <p class="text-gray-400 text-sm leading-relaxed">Executive dress crafted from rich metallic brocade with strong padded shoulders.</p>
+                        <button onclick="checkoutItem('Premium Jersey Hijab Green', 12000)" class="w-full bg-stone-900 text-white py-2 rounded-lg text-xs font-semibold hover:bg-amber-700 transition-colors">Order via WhatsApp</button>
                     </div>
-                    <button onclick="openOrderModal('Brocade Tailored Suit Dress', 125000)" class="w-full bg-gold/10 border border-gold text-gold font-semibold py-3 rounded-xl uppercase tracking-wider text-xs hover:bg-gold hover:text-black transition-all">
-                        Customize & Order
-                    </button>
                 </div>
-            </div>
 
-            <!-- Style 18 -->
-            <div class="bg-cardBg border border-gold/20 rounded-2xl overflow-hidden group hover:border-gold/60 transition-all duration-300 flex flex-col">
-                <div class="relative h-96 overflow-hidden bg-zinc-900">
-                    <img src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&fit=crop&q=80&w=800" alt="Layered Ruffle Ankara Gown" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                    <div class="absolute top-4 right-4 bg-darkBg/80 backdrop-blur-md border border-gold/30 px-3 py-1 rounded-full text-xs text-gold">Statement</div>
-                </div>
-                <div class="p-6 flex flex-col flex-grow justify-between space-y-6">
-                    <div>
-                        <div class="flex justify-between items-start mb-2">
-                            <h3 class="font-serif text-xl font-bold">Layered Ruffle Ankara Gown</h3>
-                            <span class="text-gold font-bold text-base">₦135,000</span>
+                <!-- Hijab 5 -->
+                <div class="bg-white rounded-xl shadow-sm overflow-hidden border border-stone-100 flex flex-col group">
+                    <div class="h-80 overflow-hidden relative bg-stone-100">
+                        <img src="IMG_3495.jpeg" alt="Muslim Wardrobe Jersey Hijab White" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow justify-between space-y-3">
+                        <div>
+                            <h3 class="font-medium text-stone-900 text-sm mb-1">Muslim Wardrobe Women Jersey Hijab Scarf Solid Color Head Wrap Headscarf Turban Islam Veil</h3>
+                            <p class="text-amber-700 font-bold text-base">₦10,000</p>
                         </div>
-                        <p class="text-gray-400 text-sm leading-relaxed">Stunning layered cascade ruffles with statement sweetheart neckline design.</p>
+                        <button onclick="checkoutItem('Muslim Wardrobe Jersey Hijab White', 10000)" class="w-full bg-stone-900 text-white py-2 rounded-lg text-xs font-semibold hover:bg-amber-700 transition-colors">Order via WhatsApp</button>
                     </div>
-                    <button onclick="openOrderModal('Layered Ruffle Ankara Gown', 135000)" class="w-full bg-gold/10 border border-gold text-gold font-semibold py-3 rounded-xl uppercase tracking-wider text-xs hover:bg-gold hover:text-black transition-all">
-                        Customize & Order
-                    </button>
                 </div>
-            </div>
 
-            <!-- Style 19 -->
-            <div class="bg-cardBg border border-gold/20 rounded-2xl overflow-hidden group hover:border-gold/60 transition-all duration-300 flex flex-col">
-                <div class="relative h-96 overflow-hidden bg-zinc-900">
-                    <img src="https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&q=80&w=800" alt="Minimalist Silk Slip Dress" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                    <div class="absolute top-4 right-4 bg-darkBg/80 backdrop-blur-md border border-gold/30 px-3 py-1 rounded-full text-xs text-gold">Minimalist</div>
-                </div>
-                <div class="p-6 flex flex-col flex-grow justify-between space-y-6">
-                    <div>
-                        <div class="flex justify-between items-start mb-2">
-                            <h3 class="font-serif text-xl font-bold">Minimalist Silk Slip Dress</h3>
-                            <span class="text-gold font-bold text-base">₦75,000</span>
+                <!-- Hijab 6 -->
+                <div class="bg-white rounded-xl shadow-sm overflow-hidden border border-stone-100 flex flex-col group">
+                    <div class="h-80 overflow-hidden relative bg-stone-100">
+                        <img src="IMG_3496.jpeg" alt="Muslim Women Jersey Hijab With Baseball Cap" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow justify-between space-y-3">
+                        <div>
+                            <h3 class="font-medium text-stone-900 text-sm mb-1">Muslim Women Jersey Hijabs With Base Ball Cap Summer Sports Hat With Jersey Scarf Ready to Wear</h3>
+                            <p class="text-amber-700 font-bold text-base">₦22,000</p>
                         </div>
-                        <p class="text-gray-400 text-sm leading-relaxed">Sleek bias-cut satin silk dress designed for evening dinners and understated elegance.</p>
+                        <button onclick="checkoutItem('Muslim Women Jersey Hijab With Baseball Cap', 22000)" class="w-full bg-stone-900 text-white py-2 rounded-lg text-xs font-semibold hover:bg-amber-700 transition-colors">Order via WhatsApp</button>
                     </div>
-                    <button onclick="openOrderModal('Minimalist Silk Slip Dress', 75000)" class="w-full bg-gold/10 border border-gold text-gold font-semibold py-3 rounded-xl uppercase tracking-wider text-xs hover:bg-gold hover:text-black transition-all">
-                        Customize & Order
-                    </button>
                 </div>
-            </div>
 
-            <!-- Style 20 -->
-            <div class="bg-cardBg border border-gold/20 rounded-2xl overflow-hidden group hover:border-gold/60 transition-all duration-300 flex flex-col">
-                <div class="relative h-96 overflow-hidden bg-zinc-900">
-                    <img src="https://images.unsplash.com/photo-1566174053879-31528523f8ae?auto=format&fit=crop&q=80&w=800" alt="Haute Couture Cut-Out Gown" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                    <div class="absolute top-4 right-4 bg-darkBg/80 backdrop-blur-md border border-gold/30 px-3 py-1 rounded-full text-xs text-gold">Haute Couture</div>
-                </div>
-                <div class="p-6 flex flex-col flex-grow justify-between space-y-6">
-                    <div>
-                        <div class="flex justify-between items-start mb-2">
-                            <h3 class="font-serif text-xl font-bold">Haute Couture Cut-Out Gown</h3>
-                            <span class="text-gold font-bold text-base">₦180,000</span>
+                <!-- Hijab 7 -->
+                <div class="bg-white rounded-xl shadow-sm overflow-hidden border border-stone-100 flex flex-col group">
+                    <div class="h-80 overflow-hidden relative bg-stone-100">
+                        <img src="IMG_3497.jpeg" alt="Bohemian Style Retro Court Floral Print Headscarf" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow justify-between space-y-3">
+                        <div>
+                            <h3 class="font-medium text-stone-900 text-sm mb-1">Clo 1 New Bohemian Style Retro Court Floral Print Women's Headscarf</h3>
+                            <p class="text-amber-700 font-bold text-base">₦12,000</p>
                         </div>
-                        <p class="text-gray-400 text-sm leading-relaxed">Architectural cut-outs, hand-stitched crystals, and sheer illusion paneling for elite events.</p>
-                    </div>
-                    <button onclick="openOrderModal('Haute Couture Cut-Out Gown', 180000)" class="w-full bg-gold/10 border border-gold text-gold font-semibold py-3 rounded-xl uppercase tracking-wider text-xs hover:bg-gold hover:text-black transition-all">
-                        Customize & Order
-                    </button>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Catalog Section 2: Modest & Hijab Designs (21 to 30) -->
-    <section id="hijab-collection" class="py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 border-t border-gold/10">
-        <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
-            <span class="text-xs uppercase tracking-[0.3em] text-gold">Category II</span>
-            <h2 class="font-serif text-3xl sm:text-5xl font-bold tracking-wide">Modest & Hijab Fashion</h2>
-            <div class="w-24 h-[1px] bg-gold mx-auto"></div>
-            <p class="text-gray-400 text-sm tracking-wider uppercase">10 exquisite, contemporary modest wear & hijab styles tailored with elegance</p>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <!-- Hijab Style 21 -->
-            <div class="bg-cardBg border border-gold/20 rounded-2xl overflow-hidden group hover:border-gold/60 transition-all duration-300 flex flex-col">
-                <div class="relative h-96 overflow-hidden bg-zinc-900">
-                    <img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&q=80&w=800" alt="Dubai Crystal Open Abaya" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                    <div class="absolute top-4 right-4 bg-darkBg/80 backdrop-blur-md border border-gold/30 px-3 py-1 rounded-full text-xs text-gold">Modest Luxury</div>
-                </div>
-                <div class="p-6 flex flex-col flex-grow justify-between space-y-6">
-                    <div>
-                        <div class="flex justify-between items-start mb-2">
-                            <h3 class="font-serif text-xl font-bold">Dubai Crystal Open Abaya</h3>
-                            <span class="text-gold font-bold text-base">₦85,000</span>
-                        </div>
-                        <p class="text-gray-400 text-sm leading-relaxed">Premium nidah fabric open abaya featuring delicate hand-placed crystal beadwork along the sleeves.</p>
-                    </div>
-                    <button onclick="openOrderModal('Dubai Crystal Open Abaya', 85000)" class="w-full bg-gold/10 border border-gold text-gold font-semibold py-3 rounded-xl uppercase tracking-wider text-xs hover:bg-gold hover:text-black transition-all">
-                        Customize & Order
-                    </button>
-                </div>
-            </div>
-
-            <!-- Hijab Style 22 -->
-            <div class="bg-cardBg border border-gold/20 rounded-2xl overflow-hidden group hover:border-gold/60 transition-all duration-300 flex flex-col">
-                <div class="relative h-96 overflow-hidden bg-zinc-900">
-                    <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=800" alt="Embellished Chiffon Khimar Set" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                    <div class="absolute top-4 right-4 bg-darkBg/80 backdrop-blur-md border border-gold/30 px-3 py-1 rounded-full text-xs text-gold">Graceful Fit</div>
-                </div>
-                <div class="p-6 flex flex-col flex-grow justify-between space-y-6">
-                    <div>
-                        <div class="flex justify-between items-start mb-2">
-                            <h3 class="font-serif text-xl font-bold">Embellished Chiffon Khimar Set</h3>
-                            <span class="text-gold font-bold text-base">₦60,000</span>
-                        </div>
-                        <p class="text-gray-400 text-sm leading-relaxed">Two-piece layered khimar and matching inner slip dress designed for absolute coverage and grace.</p>
-                    </div>
-                    <button onclick="openOrderModal('Embellished Chiffon Khimar Set', 60000)" class="w-full bg-gold/10 border border-gold text-gold font-semibold py-3 rounded-xl uppercase tracking-wider text-xs hover:bg-gold hover:text-black transition-all">
-                        Customize & Order
-                    </button>
-                </div>
-            </div>
-
-            <!-- Hijab Style 23 -->
-            <div class="bg-cardBg border border-gold/20 rounded-2xl overflow-hidden group hover:border-gold/60 transition-all duration-300 flex flex-col">
-                <div class="relative h-96 overflow-hidden bg-zinc-900">
-                    <img src="https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?auto=format&fit=crop&q=80&w=800" alt="Layered Silk Modest Maxi" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                    <div class="absolute top-4 right-4 bg-darkBg/80 backdrop-blur-md border border-gold/30 px-3 py-1 rounded-full text-xs text-gold">Everyday Chic</div>
-                </div>
-                <div class="p-6 flex flex-col flex-grow justify-between space-y-6">
-                    <div>
-                        <div class="flex justify-between items-start mb-2">
-                            <h3 class="font-serif text-xl font-bold">Layered Silk Modest Maxi</h3>
-                            <span class="text-gold font-bold text-base">₦75,000</span>
-                        </div>
-                        <p class="text-gray-400 text-sm leading-relaxed">Long-sleeve high-neck maxi dress with tiered ruffle details, crafted from breathable matte silk.</p>
-                    </div>
-                    <button onclick="openOrderModal('Layered Silk Modest Maxi', 75000)" class="w-full bg-gold/10 border border-gold text-gold font-semibold py-3 rounded-xl uppercase tracking-wider text-xs hover:bg-gold hover:text-black transition-all">
-                        Customize & Order
-                    </button>
-                </div>
-            </div>
-
-            <!-- Hijab Style 24 -->
-            <div class="bg-cardBg border border-gold/20 rounded-2xl overflow-hidden group hover:border-gold/60 transition-all duration-300 flex flex-col">
-                <div class="relative h-96 overflow-hidden bg-zinc-900">
-                    <img src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&q=80&w=800" alt="Royal Velvet Occasion Abaya" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                    <div class="absolute top-4 right-4 bg-darkBg/80 backdrop-blur-md border border-gold/30 px-3 py-1 rounded-full text-xs text-gold">Gala Special</div>
-                </div>
-                <div class="p-6 flex flex-col flex-grow justify-between space-y-6">
-                    <div>
-                        <div class="flex justify-between items-start mb-2">
-                            <h3 class="font-serif text-xl font-bold">Royal Velvet Occasion Abaya</h3>
-                            <span class="text-gold font-bold text-base">₦110,000</span>
-                        </div>
-                        <p class="text-gray-400 text-sm leading-relaxed">Deep French velvet abaya featuring intricate gold thread embroidery along the front panel.</p>
-                    </div>
-                    <button onclick="openOrderModal('Royal Velvet Occasion Abaya', 110000)" class="w-full bg-gold/10 border border-gold text-gold font-semibold py-3 rounded-xl uppercase tracking-wider text-xs hover:bg-gold hover:text-black transition-all">
-                        Customize & Order
-                    </button>
-                </div>
-            </div>
-
-            <!-- Hijab Style 25 -->
-            <div class="bg-cardBg border border-gold/20 rounded-2xl overflow-hidden group hover:border-gold/60 transition-all duration-300 flex flex-col">
-                <div class="relative h-96 overflow-hidden bg-zinc-900">
-                    <img src="https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?auto=format&fit=crop&q=80&w=800" alt="Modest Two-Piece Trench Set" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                    <div class="absolute top-4 right-4 bg-darkBg/80 backdrop-blur-md border border-gold/30 px-3 py-1 rounded-full text-xs text-gold">Corporate</div>
-                </div>
-                <div class="p-6 flex flex-col flex-grow justify-between space-y-6">
-                    <div>
-                        <div class="flex justify-between items-start mb-2">
-                            <h3 class="font-serif text-xl font-bold">Modest Two-Piece Trench Set</h3>
-                            <span class="text-gold font-bold text-base">₦95,000</span>
-                        </div>
-                        <p class="text-gray-400 text-sm leading-relaxed">Long tailored trench-style outer jacket paired with matching modest straight-leg trousers.</p>
-                    </div>
-                    <button onclick="openOrderModal('Modest Two-Piece Trench Set', 95000)" class="w-full bg-gold/10 border border-gold text-gold font-semibold py-3 rounded-xl uppercase tracking-wider text-xs hover:bg-gold hover:text-black transition-all">
-                        Customize & Order
-                    </button>
-                </div>
-            </div>
-
-            <!-- Hijab Style 26 -->
-            <div class="bg-cardBg border border-gold/20 rounded-2xl overflow-hidden group hover:border-gold/60 transition-all duration-300 flex flex-col">
-                <div class="relative h-96 overflow-hidden bg-zinc-900">
-                    <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=800" alt="Pleated Satin Modest Dress" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                    <div class="absolute top-4 right-4 bg-darkBg/80 backdrop-blur-md border border-gold/30 px-3 py-1 rounded-full text-xs text-gold">Contemporary</div>
-                </div>
-                <div class="p-6 flex flex-col flex-grow justify-between space-y-6">
-                    <div>
-                        <div class="flex justify-between items-start mb-2">
-                            <h3 class="font-serif text-xl font-bold">Pleated Satin Modest Dress</h3>
-                            <span class="text-gold font-bold text-base">₦88,000</span>
-                        </div>
-                        <p class="text-gray-400 text-sm leading-relaxed">Full-length pleated satin dress with bishop sleeves and high neckline for a refined silhouette.</p>
-                    </div>
-                    <button onclick="openOrderModal('Pleated Satin Modest Dress', 88000)" class="w-full bg-gold/10 border border-gold text-gold font-semibold py-3 rounded-xl uppercase tracking-wider text-xs hover:bg-gold hover:text-black transition-all">
-                        Customize & Order
-                    </button>
-                </div>
-            </div>
-
-            <!-- Hijab Style 27 -->
-            <div class="bg-cardBg border border-gold/20 rounded-2xl overflow-hidden group hover:border-gold/60 transition-all duration-300 flex flex-col">
-                <div class="relative h-96 overflow-hidden bg-zinc-900">
-                    <img src="https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&q=80&w=800" alt="Embroidered Linen Kaftan Abaya" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                    <div class="absolute top-4 right-4 bg-darkBg/80 backdrop-blur-md border border-gold/30 px-3 py-1 rounded-full text-xs text-gold">Casual Elegance</div>
-                </div>
-                <div class="p-6 flex flex-col flex-grow justify-between space-y-6">
-                    <div>
-                        <div class="flex justify-between items-start mb-2">
-                            <h3 class="font-serif text-xl font-bold">Embroidered Linen Kaftan Abaya</h3>
-                            <span class="text-gold font-bold text-base">₦72,000</span>
-                        </div>
-                        <p class="text-gray-400 text-sm leading-relaxed">Lightweight premium linen kaftan cut with loose, flowing modest dimensions and contrast embroidery.</p>
-                    </div>
-                    <button onclick="openOrderModal('Embroidered Linen Kaftan Abaya', 72000)" class="w-full bg-gold/10 border border-gold text-gold font-semibold py-3 rounded-xl uppercase tracking-wider text-xs hover:bg-gold hover:text-black transition-all">
-                        Customize & Order
-                    </button>
-                </div>
-            </div>
-
-            <!-- Hijab Style 28 -->
-            <div class="bg-cardBg border border-gold/20 rounded-2xl overflow-hidden group hover:border-gold/60 transition-all duration-300 flex flex-col">
-                <div class="relative h-96 overflow-hidden bg-zinc-900">
-                    <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&q=80&w=800" alt="Bridal Lace Modest Gown & Hijab" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                    <div class="absolute top-4 right-4 bg-darkBg/80 backdrop-blur-md border border-gold/30 px-3 py-1 rounded-full text-xs text-gold">Bridal Modest</div>
-                </div>
-                <div class="p-6 flex flex-col flex-grow justify-between space-y-6">
-                    <div>
-                        <div class="flex justify-between items-start mb-2">
-                            <h3 class="font-serif text-xl font-bold">Bridal Lace Modest Gown & Hijab</h3>
-                            <span class="text-gold font-bold text-base">₦170,000</span>
-                        </div>
-                        <p class="text-gray-400 text-sm leading-relaxed">Exquisite French lace gown with matching custom bridal shawl/hijab and pearl detailing.</p>
-                    </div>
-                    <button onclick="openOrderModal('Bridal Lace Modest Gown & Hijab', 170000)" class="w-full bg-gold/10 border border-gold text-gold font-semibold py-3 rounded-xl uppercase tracking-wider text-xs hover:bg-gold hover:text-black transition-all">
-                        Customize & Order
-                    </button>
-                </div>
-            </div>
-
-            <!-- Hijab Style 29 -->
-            <div class="bg-cardBg border border-gold/20 rounded-2xl overflow-hidden group hover:border-gold/60 transition-all duration-300 flex flex-col">
-                <div class="relative h-96 overflow-hidden bg-zinc-900">
-                    <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&q=80&w=800" alt="Kimono Sleeve Modest Set" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                    <div class="absolute top-4 right-4 bg-darkBg/80 backdrop-blur-md border border-gold/30 px-3 py-1 rounded-full text-xs text-gold">Modest Trend</div>
-                </div>
-                <div class="p-6 flex flex-col flex-grow justify-between space-y-6">
-                    <div>
-                        <div class="flex justify-between items-start mb-2">
-                            <h3 class="font-serif text-xl font-bold">Kimono Sleeve Modest Set</h3>
-                            <span class="text-gold font-bold text-base">₦82,000</span>
-                        </div>
-                        <p class="text-gray-400 text-sm leading-relaxed">Matching inner dress and flowing outer kimono jacket featuring gorgeous geometric borders.</p>
-                    </div>
-                    <button onclick="openOrderModal('Kimono Sleeve Modest Set', 82000)" class="w-full bg-gold/10 border border-gold text-gold font-semibold py-3 rounded-xl uppercase tracking-wider text-xs hover:bg-gold hover:text-black transition-all">
-                        Customize & Order
-                    </button>
-                </div>
-            </div>
-
-            <!-- Hijab Style 30 -->
-            <div class="bg-cardBg border border-gold/20 rounded-2xl overflow-hidden group hover:border-gold/60 transition-all duration-300 flex flex-col">
-                <div class="relative h-96 overflow-hidden bg-zinc-900">
-                    <img src="https://images.unsplash.com/photo-1566174053879-31528523f8ae?auto=format&fit=crop&q=80&w=800" alt="Duchess Satin Royal Abaya" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                    <div class="absolute top-4 right-4 bg-darkBg/80 backdrop-blur-md border border-gold/30 px-3 py-1 rounded-full text-xs text-gold">Haute Modest</div>
-                </div>
-                <div class="p-6 flex flex-col flex-grow justify-between space-y-6">
-                    <div>
-                        <div class="flex justify-between items-start mb-2">
-                            <h3 class="font-serif text-xl font-bold">Duchess Satin Royal Abaya</h3>
-                            <span class="text-gold font-bold text-base">₦120,000</span>
-                        </div>
-                        <p class="text-gray-400 text-sm leading-relaxed">Heavy duchess satin abaya tailored with structured flare and matching premium instant hijab.</p>
-                    </div>
-                    <button onclick="openOrderModal('Duchess Satin Royal Abaya', 120000)" class="w-full bg-gold/10 border border-gold text-gold font-semibold py-3 rounded-xl uppercase tracking-wider text-xs hover:bg-gold hover:text-black transition-all">
-                        Customize & Order
-                    </button>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Order & Customization Modal -->
-    <div id="orderModal" class="fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-sm hidden p-4 overflow-y-auto">
-        <div class="bg-cardBg border border-gold/40 rounded-3xl max-w-xl w-full p-6 sm:p-8 relative my-8 shadow-2xl">
-            <button onclick="closeOrderModal()" class="absolute top-6 right-6 text-gray-400 hover:text-gold text-2xl font-bold">&times;</button>
-            
-            <div class="mb-6">
-                <span class="text-xs uppercase tracking-widest text-gold">Custom Tailoring Checkout</span>
-                <h3 id="modalDressTitle" class="font-serif text-2xl sm:text-3xl font-bold mt-1">Dress Title</h3>
-                <p class="text-gold font-semibold text-lg mt-1" id="modalDressPrice">₦0</p>
-            </div>
-
-            <form id="checkoutForm" onsubmit="processPayment(event)" class="space-y-4">
-                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                    <div>
-                        <label class="block text-xs uppercase tracking-wider text-gray-400 mb-1">Full Name</label>
-                        <input type="text" id="customerName" required class="w-full bg-darkBg border border-gold/20 rounded-xl px-4 py-3 text-sm focus:border-gold focus:outline-none" placeholder="Jane Doe">
-                    </div>
-                    <div>
-                        <label class="block text-xs uppercase tracking-wider text-gray-400 mb-1">Email Address</label>
-                        <input type="email" id="customerEmail" required class="w-full bg-darkBg border border-gold/20 rounded-xl px-4 py-3 text-sm focus:border-gold focus:outline-none" placeholder="jane@example.com">
+                        <button onclick="checkoutItem('Bohemian Style Retro Court Headscarf', 12000)" class="w-full bg-stone-900 text-white py-2 rounded-lg text-xs font-semibold hover:bg-amber-700 transition-colors">Order via WhatsApp</button>
                     </div>
                 </div>
-
-                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                    <div>
-                        <label class="block text-xs uppercase tracking-wider text-gray-400 mb-1">Phone Number</label>
-                        <input type="tel" id="customerPhone" required class="w-full bg-darkBg border border-gold/20 rounded-xl px-4 py-3 text-sm focus:border-gold focus:outline-none" placeholder="08012345678">
-                    </div>
-                    <div>
-                        <label class="block text-xs uppercase tracking-wider text-gray-400 mb-1">Standard Size or Custom Fit</label>
-                        <select id="customerSize" class="w-full bg-darkBg border border-gold/20 rounded-xl px-4 py-3 text-sm focus:border-gold focus:outline-none text-gray-200">
-                            <option value="UK 8 / US 4">UK 8 / US 4</option>
-                            <option value="UK 10 / US 6">UK 10 / US 6</option>
-                            <option value="UK 12 / US 8">UK 12 / US 8</option>
-                            <option value="UK 14 / US 10">UK 14 / US 10</option>
-                            <option value="Custom Measurements">Custom Measurements</option>
-                        </select>
-                    </div>
-                </div>
-
-                <div>
-                    <label class="block text-xs uppercase tracking-wider text-gray-400 mb-1">Delivery Address</label>
-                    <textarea id="customerAddress" rows="2" required class="w-full bg-darkBg border border-gold/20 rounded-xl px-4 py-3 text-sm focus:border-gold focus:outline-none" placeholder="Enter your full street address and city..."></textarea>
-                </div>
-
-                <div>
-                    <label class="block text-xs uppercase tracking-wider text-gray-400 mb-1">Specific Measurements or Custom Notes (Optional)</label>
-                    <textarea id="customerNotes" rows="2" class="w-full bg-darkBg border border-gold/20 rounded-xl px-4 py-3 text-sm focus:border-gold focus:outline-none" placeholder="Bust, Waist, Hip dimensions or special tailoring instructions..."></textarea>
-                </div>
-
-                <div class="p-4 rounded-xl bg-gold/5 border border-gold/20 text-xs text-gold/90 flex items-center gap-3">
-                    <span class="text-lg">✨</span>
-                    <span>Note: Every piece is custom-tailored to precision. Your completed order will be delivered to you in <strong>5–7 business days</strong>.</span>
-                </div>
-
-                <button type="submit" class="w-full bg-gradient-to-r from-gold-dark via-gold to-gold-metallic text-black font-bold py-4 rounded-xl uppercase tracking-widest text-sm shadow-lg shadow-gold/20 hover:opacity-90 transition-all mt-4">
-                    Proceed to Secure Payment via Paystack
-                </button>
-            </form>
-        </div>
-    </div>
-
-    <!-- Order Success Notification Overlay -->
-    <div id="successModal" class="fixed inset-0 z-50 flex items-center justify-center bg-black/90 backdrop-blur-md hidden p-4">
-        <div class="bg-cardBg border border-gold rounded-3xl max-w-md w-full p-8 text-center space-y-6 shadow-2xl">
-            <div class="w-20 h-20 bg-gold/10 border-2 border-gold rounded-full flex items-center justify-center mx-auto text-gold text-3xl">
-                ✓
             </div>
-            <div class="space-y-2">
-                <h3 class="font-serif text-3xl font-bold gold-gradient">Order Confirmed!</h3>
-                <p class="text-gray-300 text-sm">Thank you for choosing <span class="text-gold font-semibold">Mère de la Mode</span>. Payment has been successfully verified.</p>
-            </div>
-            <div class="p-4 bg-darkBg border border-gold/30 rounded-2xl text-xs space-y-1 text-gold-light">
-                <p class="font-bold uppercase tracking-wider">Estimated Delivery Notice</p>
-                <p class="text-gray-300">Your custom package will be crafted and delivered to your doorstep in <strong class="text-gold">5–7 business days</strong>.</p>
-            </div>
-            <button onclick="closeSuccessModal()" class="w-full bg-gold text-black font-bold py-3.5 rounded-xl uppercase tracking-wider text-xs hover:bg-gold-light transition-all">
-                Return to Homepage
-            </button>
-        </div>
-    </div>
+        </section>
+
+    </main>
 
     <!-- Footer -->
-    <footer class="bg-cardBg border-t border-gold/20 py-12 px-4 sm:px-6 lg:px-8 mt-20">
-        <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8 text-center md:text-left">
-            <a href="#top" class="flex items-center space-x-4 group cursor-pointer">
-                <div class="w-12 h-12 rounded-full p-[2px] bg-gradient-to-tr from-gold-dark via-gold-light to-gold overflow-hidden flex items-center justify-center group-hover:scale-105 transition-transform">
-                    <img src="IMG_3371.jpeg" alt="Logo" class="w-full h-full object-cover rounded-full">
-                </div>
-                <div>
-                    <span class="font-serif font-bold text-base tracking-wider gold-gradient">MÈRE DE LA MODE</span>
-                    <p class="text-[10px] tracking-widest text-gold-metallic/80 uppercase">&lt;Mother of Fashion&gt;</p>
-                </div>
-            </a>
-            <p class="text-xs text-gray-500 tracking-wider">&copy; 2026 Mère de la Mode. All rights reserved. Beauty Redefined.</p>
-            <div class="flex space-x-6 text-xs uppercase tracking-widest text-gray-400">
-                <a href="#collection" class="hover:text-gold transition-colors">Atelier</a>
-                <a href="#hijab-collection" class="hover:text-gold transition-colors">Modest Wear</a>
-                <a href="#top" class="hover:text-gold transition-colors">Back to Top</a>
-            </div>
-        </div>
+    <footer class="bg-white border-t border-stone-200 mt-16 py-8 text-center text-sm text-stone-500">
+        <p>&copy; 2026 MÈRE DE LA MODE. All rights reserved. | Delivery Lead Time: 5–7 Days</p>
     </footer>
 
-    <!-- Script Logic -->
+    <!-- Script to handle automated WhatsApp ordering -->
     <script>
-        let selectedDress = { title: '', price: 0 };
-
-        function scrollToCatalog() {
-            document.getElementById('collection').scrollIntoView({ behavior: 'smooth' });
-        }
-
-        function openOrderModal(title, price) {
-            selectedDress = { title, price };
-            document.getElementById('modalDressTitle').innerText = title;
-            document.getElementById('modalDressPrice').innerText = '₦' + price.toLocaleString();
-            document.getElementById('orderModal').classList.remove('hidden');
-        }
-
-        function closeOrderModal() {
-            document.getElementById('orderModal').classList.add('hidden');
-        }
-
-        function closeSuccessModal() {
-            document.getElementById('successModal').classList.add('hidden');
-            location.reload();
-        }
-
-        function processPayment(e) {
-            e.preventDefault();
-            
-            const name = document.getElementById('customerName').value;
-            const email = document.getElementById('customerEmail').value;
-            const phone = document.getElementById('customerPhone').value;
-            const size = document.getElementById('customerSize').value;
-            const address = document.getElementById('customerAddress').value;
-            const notes = document.getElementById('customerNotes').value;
-
-            closeOrderModal();
-
-            let handler = PaystackPop.setup({
-                key: 'pk_test_ed057d197669d054972e382d56aeef06599b50cd', 
-                email: email,
-                amount: selectedDress.price * 100, 
-                currency: 'NGN',
-                ref: 'MDM_' + Math.floor((Math.random() * 1000000000) + 1),
-                metadata: {
-                    custom_fields: [
-                        { display_name: "Customer Name", variable_name: "customer_name", value: name },
-                        { display_name: "Dress Style", variable_name: "dress_style", value: selectedDress.title },
-                        { display_name: "Size / Fit", variable_name: "size_fit", value: size },
-                        { display_name: "Customer Phone", variable_name: "phone", value: phone },
-                        { display_name: "Delivery Address", variable_name: "address", value: address },
-                        { display_name: "Custom Notes", variable_name: "notes", value: notes }
-                    ]
-                },
-                callback: function(response) {
-                    document.getElementById('successModal').classList.remove('hidden');
-
-                    const whatsappNumber = "2349022882806"; 
-                    const text = `New Paid Order - Mère de la Mode!%0A%0A` +
-                                 `*Dress:* ${selectedDress.title}%0A` +
-                                 `*Price:* ₦${selectedDress.price.toLocaleString()}%0A` +
-                                 `*Name:* ${name}%0A` +
-                                 `*Email:* ${email}%0A` +
-                                 `*Phone:* ${phone}%0A` +
-                                 `*Size/Fit:* ${size}%0A` +
-                                 `*Address:* ${address}%0A` +
-                                 `*Custom Notes:* ${notes}%0A` +
-                                 `*Paystack Ref:* ${response.reference}`;
-
-                    setTimeout(() => {
-                        window.open(`https://wa.me/${whatsappNumber}?text=${text}`, '_blank');
-                    }, 1500);
-                },
-                onClose: function() {
-                    alert('Transaction window was closed.');
-                }
-            });
-            handler.openIframe();
+        function checkoutItem(itemName, itemPrice) {
+            const phoneNumber = "2349022882806";
+            const message = `Hello Mère de la Mode, I want to place an order for:\n\n*Item:* ${itemName}\n*Price:* ₦${itemPrice.toLocaleString()}\n\nPlease guide me through payment and 5-7 days delivery.`;
+            const encodedMessage = encodeURIComponent(message);
+            window.open(`https://wa.me/${phoneNumber}?text=${encodedMessage}`, '_blank');
         }
     </script>
 </body>
