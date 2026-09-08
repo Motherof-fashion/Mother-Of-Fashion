@@ -3,474 +3,355 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MOTHER OF FASHION & Luxury Design</title>
+    <title>Mère de la Mode | Mother of Fashion</title>
+    <!-- Google Fonts & Tailwind CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Paystack Inline JS -->
+    <script src="https://js.paystack.co/v1/inline.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            light: '#fef08a',
+                            DEFAULT: '#d4af37',
+                            dark: '#aa7c11',
+                            metallic: '#dfb95c'
+                        },
+                        darkBg: '#0f0f0f',
+                        cardBg: '#18181b'
+                    },
+                    fontFamily: {
+                        serif: ['"Playfair Display"', 'serif'],
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
     <style>
-        /* --- Luxury Fonts & Variables --- */
-        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Montserrat:wght@300;400;500;700&display=swap');
-
-        :root {
-            --black-primary: #0a0a0a;
-            --black-secondary: #121212;
-            --gold-primary: #d4af37;
-            --gold-glow: #f3e5ab;
-            --gold-dark: #aa8416;
-            --text-light: #f5f5f5;
-            --text-muted: #a0a0a0;
-        }
-
-        /* --- Global Reset & Styling --- */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            scroll-behavior: smooth;
-        }
-
-        body {
-            background-color: var(--black-primary);
-            color: var(--text-light);
-            font-family: 'Montserrat', sans-serif;
-            overflow-x: hidden;
-            line-height: 1.6;
-            padding: 20px;
-        }
-
-        /* --- Header / Navigation --- */
-        header {
-            background-color: rgba(10, 10, 10, 0.95);
-            border-bottom: 1px solid rgba(212, 175, 55, 0.2);
-            padding: 20px 4%;
-            text-align: center;
-            margin-bottom: 40px;
-        }
-
-        .logo {
-            font-family: 'Cinzel', serif;
-            font-size: 28px;
-            font-weight: 700;
-            letter-spacing: 4px;
-            color: var(--gold-primary);
-            text-transform: uppercase;
-            text-decoration: none;
-            display: block;
-            margin-bottom: 5px;
-        }
-
-        .tagline {
-            font-size: 12px;
-            text-transform: uppercase;
-            letter-spacing: 3px;
-            color: var(--text-muted);
-        }
-
-        /* --- Main Content Container --- */
-        .main-container {
-            max-width: 1400px;
-            margin: 0 auto;
-            padding: 0 2%;
-        }
-
-        .section-title {
-            font-family: 'Cinzel', serif;
-            font-size: 24px;
-            text-align: center;
-            letter-spacing: 4px;
-            text-transform: uppercase;
-            color: var(--gold-primary);
-            margin-bottom: 10px;
-        }
-
-        .section-subtitle {
-            text-align: center;
-            font-size: 13px;
-            color: var(--text-muted);
-            margin-bottom: 40px;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-
-        /* --- Style Selector Grid --- */
-        .design-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-            gap: 25px;
-            margin-bottom: 60px;
-        }
-
-        .design-card {
-            background-color: var(--black-secondary);
-            border: 1px solid rgba(212, 175, 55, 0.15);
-            border-radius: 4px;
-            padding: 20px;
-            text-align: center;
-            transition: border 0.3s ease;
-        }
-
-        .design-card:hover {
-            border: 1px solid var(--gold-primary);
-        }
-
-        .design-checkbox {
-            display: block;
-            margin: 0 auto 15px auto;
-            accent-color: var(--gold-primary);
-            transform: scale(1.4);
-            cursor: pointer;
-        }
-
-        .design-visual {
-            height: 240px;
-            background: linear-gradient(45deg, #1a1a1a, #2a2210);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-bottom: 15px;
-            border: 1px dashed rgba(212, 175, 55, 0.2);
-        }
-
-        .design-visual::before {
-            content: '⚜';
-            font-size: 36px;
-            color: rgba(212, 175, 55, 0.2);
-        }
-
-        .design-info h3 {
-            font-family: 'Cinzel', serif;
-            font-size: 14px;
-            letter-spacing: 1px;
-            color: var(--text-light);
-            margin-bottom: 5px;
-            text-transform: uppercase;
-        }
-
-        .design-info p {
-            font-size: 12px;
-            color: var(--gold-primary);
-            font-weight: 300;
-        }
-
-        /* --- Client Information Form --- */
-        .form-section {
-            background: var(--black-secondary);
-            border: 1px solid rgba(212, 175, 55, 0.2);
-            padding: 40px 30px;
-            max-width: 600px;
-            margin: 40px auto 0 auto;
-            border-radius: 4px;
-        }
-
-        .form-grid {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 5px;
-        }
-
-        .form-group {
-            display: flex;
-            flex-direction: column;
-            margin-bottom: 20px;
-        }
-
-        .form-group label {
-            font-size: 11px;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            color: var(--gold-primary);
-            margin-bottom: 8px;
-            font-weight: 500;
-        }
-
-        .form-group input, .form-group textarea, .form-group select {
-            background-color: var(--black-primary);
-            border: 1px solid rgba(212, 175, 55, 0.3);
-            padding: 12px 15px;
-            color: var(--text-light);
-            font-family: 'Montserrat', sans-serif;
-            font-size: 14px;
-            border-radius: 2px;
-            width: 100%;
-        }
-
-        .form-group input:focus, .form-group textarea:focus, .form-group select:focus {
-            outline: none;
-            border-color: var(--gold-primary);
-        }
-
-        /* --- Submit Button --- */
-        .submit-btn {
-            background: linear-gradient(90deg, var(--gold-dark), var(--gold-primary));
-            color: var(--black-primary);
-            border: none;
-            padding: 16px;
-            width: 100%;
-            font-family: 'Cinzel', serif;
-            font-size: 16px;
-            font-weight: 700;
-            letter-spacing: 2px;
-            text-transform: uppercase;
-            cursor: pointer;
-            margin-top: 10px;
-            transition: all 0.3s ease;
-        }
-
-        .submit-btn:hover {
-            letter-spacing: 4px;
-            background: linear-gradient(90deg, var(--gold-primary), var(--gold-glow));
-        }
-
-        /* --- Footer --- */
-        footer {
-            text-align: center;
-            padding: 40px 20px;
-            margin-top: 60px;
-            border-top: 1px solid rgba(212, 175, 55, 0.1);
-            font-size: 11px;
-            letter-spacing: 1px;
-            color: var(--text-muted);
-            text-transform: uppercase;
+        .gold-gradient {
+            background: linear-gradient(135deg, #bf953f 0%, #fcf6ba 25%, #b38728 50%, #fbf5b7 75%, #aa771c 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
     </style>
 </head>
-<body>
+<body class="bg-darkBg text-gray-100 font-sans antialiased selection:bg-gold selection:text-black">
 
-    <!-- Header Navigation -->
-    <header>
-        <div class="logo">Mother of fashion</div>
-        <div class="tagline">Haute Couture & Luxury Design | Lagos & Abuja</div>
+    <!-- Header / Navigation -->
+    <header class="sticky top-0 z-50 bg-darkBg/95 backdrop-blur-md border-b border-gold/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-24 flex items-center justify-between">
+            <!-- Logo that links back to top -->
+            <a href="#top" class="flex items-center space-x-4 group cursor-pointer">
+                <div class="w-14 h-14 rounded-full p-[2px] bg-gradient-to-tr from-gold-dark via-gold-light to-gold shadow-lg shadow-gold/10 overflow-hidden flex items-center justify-center group-hover:scale-105 transition-transform">
+                    <img src="image.png" alt="Mère de la Mode Logo" class="w-full h-full object-cover rounded-full">
+                </div>
+                <div>
+                    <span class="font-serif text-lg sm:text-xl font-bold tracking-wider gold-gradient">MÈRE DE LA MODE</span>
+                    <p class="text-[10px] sm:text-xs tracking-widest text-gold-metallic/80 uppercase">&lt;Mother of Fashion&gt;</p>
+                </div>
+            </a>
+            <nav class="hidden md:flex items-center space-x-8 text-sm tracking-widest uppercase">
+                <a href="#collection" class="hover:text-gold transition-colors">The Atelier</a>
+                <a href="#bespoke" class="hover:text-gold transition-colors">Bespoke Process</a>
+            </nav>
+            <div>
+                <button onclick="scrollToCatalog()" class="bg-gradient-to-r from-gold-dark via-gold to-gold-metallic text-black font-semibold text-xs sm:text-sm px-6 py-2.5 rounded-full uppercase tracking-widest shadow-lg shadow-gold/20 hover:opacity-90 transition-all">
+                    Explore Styles
+                </button>
+            </div>
+        </div>
     </header>
 
-    <!-- Main Content Container -->
-    <main class="main-container">
-        
-        <h2 class="section-title">The Atelier Collection</h2>
-        <p class="section-subtitle">Check the items below to customize your luxury lookbook request</p>
+    <!-- Hero Section -->
+    <section id="top" class="relative min-h-[85vh] flex items-center justify-center text-center px-4 overflow-hidden bg-gradient-to-b from-darkBg via-cardBg to-darkBg">
+        <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#dfb95c_1px,transparent_1px)] [background-size:16px_16px]"></div>
+        <div class="relative max-w-4xl mx-auto space-y-8 z-10">
+            <div class="inline-block p-1 rounded-full border border-gold/40 px-6 py-1.5 mb-2 bg-gold/5">
+                <span class="text-xs uppercase tracking-[0.3em] text-gold-light">Bespoke Tailoring & Haute Couture</span>
+            </div>
+            <h1 class="font-serif text-4xl sm:text-6xl lg:text-7xl font-bold tracking-tight leading-tight">
+                Beauty <span class="italic font-normal gold-gradient">Redefined</span>
+            </h1>
+            <p class="text-gray-400 text-base sm:text-xl max-w-2xl mx-auto font-light leading-relaxed">
+                Handcrafted perfection tailored exclusively for you. Choose your preferred style, provide your measurements, and let our master artisans bring your dream dress to life.
+            </p>
+            <div class="pt-4 flex flex-col sm:flex-row items-center justify-center gap-4">
+                <button onclick="scrollToCatalog()" class="w-full sm:w-auto bg-gold text-black font-bold px-8 py-4 rounded-full uppercase tracking-wider text-sm shadow-xl shadow-gold/20 hover:bg-gold-light transition-all">
+                    Choose Your Style
+                </button>
+                <div class="text-xs text-gold/80 tracking-widest uppercase flex items-center gap-2">
+                    <span class="w-2 h-2 rounded-full bg-gold animate-pulse"></span>
+                    Fast Delivery in 5–7 Business Days
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <!-- Master Inquiry Form -->
-        <form id="curationForm" action="#" method="POST">
-            
-            <!-- Lookbook Design Grid Choices -->
-            <div class="design-grid">
-                <!-- Design 01 -->
-                <div class="design-card">
-                    <input type="checkbox" name="designs" value="Design 01" class="design-checkbox">
-                    <div class="design-visual"></div>
-                    <div class="design-info">
-                        <h3>Imperial Velvet Gown</h3>
-                        <p>Design 01</p>
+    <!-- Catalog Section -->
+    <section id="collection" class="py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+            <h2 class="font-serif text-3xl sm:text-5xl font-bold tracking-wide">Signature Collection</h2>
+            <div class="w-24 h-[1px] bg-gold mx-auto"></div>
+            <p class="text-gray-400 text-sm tracking-wider uppercase">Select a masterpiece style to customize and order</p>
+        </div>
+
+        <!-- Style Cards Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Style 1 -->
+            <div class="bg-cardBg border border-gold/20 rounded-2xl overflow-hidden group hover:border-gold/60 transition-all duration-300 flex flex-col">
+                <div class="relative h-96 overflow-hidden bg-zinc-900">
+                    <img src="https://images.unsplash.com/photo-1566174053879-31528523f8ae?auto=format&fit=crop&q=80&w=800" alt="The Royal Gala Gown" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute top-4 right-4 bg-darkBg/80 backdrop-blur-md border border-gold/30 px-3 py-1 rounded-full text-xs text-gold">
+                        Signature Style
                     </div>
                 </div>
-                <!-- Design 02 -->
-                <div class="design-card">
-                    <input type="checkbox" name="designs" value="Design 02" class="design-checkbox">
-                    <div class="design-visual"></div>
-                    <div class="design-info">
-                        <h3>Gilded Silk Tuxedo</h3>
-                        <p>Design 02</p>
+                <div class="p-6 flex flex-col flex-grow justify-between space-y-6">
+                    <div>
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-serif text-2xl font-bold">The Royal Gala Gown</h3>
+                            <span class="text-gold font-bold text-lg">₦120,000</span>
+                        </div>
+                        <p class="text-gray-400 text-sm leading-relaxed">Floor-sweeping silhouette tailored with precision bodice structuring and premium draping fabric.</p>
                     </div>
-                </div>
-                <!-- Design 03 -->
-                <div class="design-card">
-                    <input type="checkbox" name="designs" value="Design 03" class="design-checkbox">
-                    <div class="design-visual"></div>
-                    <div class="design-info">
-                        <h3>Royal Brocade Agbada</h3>
-                        <p>Design 03</p>
-                    </div>
-                </div>
-                <!-- Design 04 -->
-                <div class="design-card">
-                    <input type="checkbox" name="designs" value="Design 04" class="design-checkbox">
-                    <div class="design-visual"></div>
-                    <div class="design-info">
-                        <h3>Midnight Lace Corset</h3>
-                        <p>Design 04</p>
-                    </div>
-                </div>
-                <!-- Design 05 -->
-                <div class="design-card">
-                    <input type="checkbox" name="designs" value="Design 05" class="design-checkbox">
-                    <div class="design-visual"></div>
-                    <div class="design-info">
-                        <h3>Sovereign Chiffon Cape</h3>
-                        <p>Design 05</p>
-                    </div>
-                </div>
-                <!-- Design 06 -->
-                <div class="design-card">
-                    <input type="checkbox" name="designs" value="Design 06" class="design-checkbox">
-                    <div class="design-visual"></div>
-                    <div class="design-info">
-                        <h3>Baroque Gold Blazer</h3>
-                        <p>Design 06</p>
-                    </div>
-                </div>
-                <!-- Design 07 -->
-                <div class="design-card">
-                    <input type="checkbox" name="designs" value="Design 07" class="design-checkbox">
-                    <div class="design-visual"></div>
-                    <div class="design-info">
-                        <h3>Majestic Satin Ballgown</h3>
-                        <p>Design 07</p>
-                    </div>
-                </div>
-                <!-- Design 08 -->
-                <div class="design-card">
-                    <input type="checkbox" name="designs" value="Design 08" class="design-checkbox">
-                    <div class="design-visual"></div>
-                    <div class="design-info">
-                        <h3>Emperor Wool Overcoat</h3>
-                        <p>Design 08</p>
-                    </div>
-                </div>
-                <!-- Design 09 -->
-                <div class="design-card">
-                    <input type="checkbox" name="designs" value="Design 09" class="design-checkbox">
-                    <div class="design-visual"></div>
-                    <div class="design-info">
-                        <h3>Dynasty Asoke Ensemble</h3>
-                        <p>Design 09</p>
-                    </div>
-                </div>
-                <!-- Design 10 -->
-                <div class="design-card">
-                    <input type="checkbox" name="designs" value="Design 10" class="design-checkbox">
-                    <div class="design-visual"></div>
-                    <div class="design-info">
-                        <h3>Regal Crepe Mermaid Gown</h3>
-                        <p>Design 10</p>
-                    </div>
-                </div>
-                <!-- Design 11 -->
-                <div class="design-card">
-                    <input type="checkbox" name="designs" value="Design 11" class="design-checkbox">
-                    <div class="design-visual"></div>
-                    <div class="design-info">
-                        <h3>Ethereal Organza Kaftan</h3>
-                        <p>Design 11</p>
-                    </div>
-                </div>
-                <!-- Design 12 -->
-                <div class="design-card">
-                    <input type="checkbox" name="designs" value="Design 12" class="design-checkbox">
-                    <div class="design-visual"></div>
-                    <div class="design-info">
-                        <h3>Sultry Crimson Jumpsuit</h3>
-                        <p>Design 12</p>
-                    </div>
-                </div>
-                <!-- Design 13 -->
-                <div class="design-card">
-                    <input type="checkbox" name="designs" value="Design 13" class="design-checkbox">
-                    <div class="design-visual"></div>
-                    <div class="design-info">
-                        <h3>Monarch Hand-Beaded Corset</h3>
-                        <p>Design 13</p>
-                    </div>
-                </div>
-                <!-- Design 14 -->
-                <div class="design-card">
-                    <input type="checkbox" name="designs" value="Design 14" class="design-checkbox">
-                    <div class="design-visual"></div>
-                    <div class="design-info">
-                        <h3>Vanguard Leather Trench</h3>
-                        <p>Design 14</p>
-                    </div>
-                </div>
-                <!-- Design 15 -->
-                <div class="design-card">
-                    <input type="checkbox" name="designs" value="Design 15" class="design-checkbox">
-                    <div class="design-visual"></div>
-                    <div class="design-info">
-                        <h3>Celestial Shimmer Dress</h3>
-                        <p>Design 15</p>
-                    </div>
-                </div>
-                <!-- Design 16 -->
-                <div class="design-card">
-                    <input type="checkbox" name="designs" value="Design 16" class="design-checkbox">
-                    <div class="design-visual"></div>
-                    <div class="design-info">
-                        <h3>Opulent Velvet Agbada</h3>
-                        <p>Design 16</p>
-                    </div>
-                </div>
-                <!-- Design 17 -->
-                <div class="design-card">
-                    <input type="checkbox" name="designs" value="Design 17" class="design-checkbox">
-                    <div class="design-visual"></div>
-                    <div class="design-info">
-                        <h3>Elysian Silk Slip Gown</h3>
-                        <p>Design 17</p>
-                    </div>
-                </div>
-                <!-- Design 18 -->
-                <div class="design-card">
-                    <input type="checkbox" name="designs" value="Design 18" class="design-checkbox">
-                    <div class="design-visual"></div>
-                    <div class="design-info">
-                        <h3>Gothic Glamour Suit</h3>
-                        <p>Design 18</p>
-                    </div>
-                </div>
-                <!-- Design 19 -->
-                <div class="design-card">
-                    <input type="checkbox" name="designs" value="Design 19" class="design-checkbox">
-                    <div class="design-visual"></div>
-                    <div class="design-info">
-                        <h3>Sahara Linen Kaftan</h3>
-                        <p>Design 19</p>
-                    </div>
-                </div>
-                <!-- Design 20 -->
-                <div class="design-card">
-                    <input type="checkbox" name="designs" value="Design 20" class="design-checkbox">
-                    <div class="design-visual"></div>
-                    <div class="design-info">
-                        <h3>Signature Couture Finale</h3>
-                        <p>Design 20</p>
-                    </div>
+                    <button onclick="openOrderModal('The Royal Gala Gown', 120000)" class="w-full bg-gold/10 border border-gold text-gold font-semibold py-3 rounded-xl uppercase tracking-wider text-xs hover:bg-gold hover:text-black transition-all">
+                        Customize & Order
+                    </button>
                 </div>
             </div>
 
-            <!-- Client Information Form -->
-            <div class="form-section">
-                <div class="form-grid">
-                    
-                    <div class="form-group">
-                        <label for="clientName">Full Name</label>
-                        <input type="text" id="clientName" name="name" required placeholder="Your beautiful name">
+            <!-- Style 2 -->
+            <div class="bg-cardBg border border-gold/20 rounded-2xl overflow-hidden group hover:border-gold/60 transition-all duration-300 flex flex-col">
+                <div class="relative h-96 overflow-hidden bg-zinc-900">
+                    <img src="https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?auto=format&fit=crop&q=80&w=800" alt="Elysian Silk Wrap Dress" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute top-4 right-4 bg-darkBg/80 backdrop-blur-md border border-gold/30 px-3 py-1 rounded-full text-xs text-gold">
+                        Bestseller
                     </div>
-
-                    <div class="form-group">
-                        <label for="clientEmail">Email Address</label>
-                        <input type="email" id="clientEmail" name="email" required placeholder="name@luxury.com">
+                </div>
+                <div class="p-6 flex flex-col flex-grow justify-between space-y-6">
+                    <div>
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-serif text-2xl font-bold">Elysian Silk Wrap Dress</h3>
+                            <span class="text-gold font-bold text-lg">₦85,000</span>
+                        </div>
+                        <p class="text-gray-400 text-sm leading-relaxed">An elegant wrap design crafted to accentuate your natural curves with graceful fluidity.</p>
                     </div>
+                    <button onclick="openOrderModal('Elysian Silk Wrap Dress', 85000)" class="w-full bg-gold/10 border border-gold text-gold font-semibold py-3 rounded-xl uppercase tracking-wider text-xs hover:bg-gold hover:text-black transition-all">
+                        Customize & Order
+                    </button>
+                </div>
+            </div>
 
-                    <div class="form-group">
-                        <label for="cityLocation">Preferred Atelier Location</label>
-                        <select id="cityLocation" name="location">
-                            <option value="lagos">Lagos Atelier</option>
-                            <option value="abuja">Abuja Atelier</option>
+            <!-- Style 3 -->
+            <div class="bg-cardBg border border-gold/20 rounded-2xl overflow-hidden group hover:border-gold/60 transition-all duration-300 flex flex-col">
+                <div class="relative h-96 overflow-hidden bg-zinc-900">
+                    <img src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&q=80&w=800" alt="Aurelia Evening Midi" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute top-4 right-4 bg-darkBg/80 backdrop-blur-md border border-gold/30 px-3 py-1 rounded-full text-xs text-gold">
+                        Modern Chic
+                    </div>
+                </div>
+                <div class="p-6 flex flex-col flex-grow justify-between space-y-6">
+                    <div>
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-serif text-2xl font-bold">Aurelia Evening Midi</h3>
+                            <span class="text-gold font-bold text-lg">₦95,000</span>
+                        </div>
+                        <p class="text-gray-400 text-sm leading-relaxed">Sophisticated midi cut built for high-end gatherings, sophisticated dinners, and statement appearances.</p>
+                    </div>
+                    <button onclick="openOrderModal('Aurelia Evening Midi', 95000)" class="w-full bg-gold/10 border border-gold text-gold font-semibold py-3 rounded-xl uppercase tracking-wider text-xs hover:bg-gold hover:text-black transition-all">
+                        Customize & Order
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Order & Customization Modal -->
+    <div id="orderModal" class="fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-sm hidden p-4 overflow-y-auto">
+        <div class="bg-cardBg border border-gold/40 rounded-3xl max-w-xl w-full p-6 sm:p-8 relative my-8 shadow-2xl">
+            <button onclick="closeOrderModal()" class="absolute top-6 right-6 text-gray-400 hover:text-gold text-2xl font-bold">&times;</button>
+            
+            <div class="mb-6">
+                <span class="text-xs uppercase tracking-widest text-gold">Custom Tailoring Checkout</span>
+                <h3 id="modalDressTitle" class="font-serif text-2xl sm:text-3xl font-bold mt-1">Dress Title</h3>
+                <p class="text-gold font-semibold text-lg mt-1" id="modalDressPrice">₦0</p>
+            </div>
+
+            <form id="checkoutForm" onsubmit="processPayment(event)" class="space-y-4">
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-xs uppercase tracking-wider text-gray-400 mb-1">Full Name</label>
+                        <input type="text" id="customerName" required class="w-full bg-darkBg border border-gold/20 rounded-xl px-4 py-3 text-sm focus:border-gold focus:outline-none" placeholder="Jane Doe">
+                    </div>
+                    <div>
+                        <label class="block text-xs uppercase tracking-wider text-gray-400 mb-1">Email Address</label>
+                        <input type="email" id="customerEmail" required class="w-full bg-darkBg border border-gold/20 rounded-xl px-4 py-3 text-sm focus:border-gold focus:outline-none" placeholder="jane@example.com">
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-xs uppercase tracking-wider text-gray-400 mb-1">Phone Number</label>
+                        <input type="tel" id="customerPhone" required class="w-full bg-darkBg border border-gold/20 rounded-xl px-4 py-3 text-sm focus:border-gold focus:outline-none" placeholder="08012345678">
+                    </div>
+                    <div>
+                        <label class="block text-xs uppercase tracking-wider text-gray-400 mb-1">Standard Size or Custom Fit</label>
+                        <select id="customerSize" class="w-full bg-darkBg border border-gold/20 rounded-xl px-4 py-3 text-sm focus:border-gold focus:outline-none text-gray-200">
+                            <option value="UK 8 / US 4">UK 8 / US 4</option>
+                            <option value="UK 10 / US 6">UK 10 / US 6</option>
+                            <option value="UK 12 / US 8">UK 12 / US 8</option>
+                            <option value="UK 14 / US 10">UK 14 / US 10</option>
+                            <option value="Custom Measurements">Custom Measurements</option>
                         </select>
                     </div>
-
-                    <div class="form-group">
-                        <label for="customNotes">Customization Specifications</label>
-                        <textarea id="customNotes" name="notes" rows="4" placeholder="Describe your fitting preferences or specific event requirements..."></textarea>
-                    </div>
-
-                    <button type="submit" class="submit-btn">Request Bespoke Curation</button>
-
                 </div>
-            </div>
 
-        </form>
-    </main>
+                <div>
+                    <label class="block text-xs uppercase tracking-wider text-gray-400 mb-1">Delivery Address</label>
+                    <textarea id="customerAddress" rows="2" required class="w-full bg-darkBg border border-gold/20 rounded-xl px-4 py-3 text-sm focus:border-gold focus:outline-none" placeholder="Enter your full street address and city..."></textarea>
+                </div>
+
+                <div>
+                    <label class="block text-xs uppercase tracking-wider text-gray-400 mb-1">Specific Measurements or Custom Notes (Optional)</label>
+                    <textarea id="customerNotes" rows="2" class="w-full bg-darkBg border border-gold/20 rounded-xl px-4 py-3 text-sm focus:border-gold focus:outline-none" placeholder="Bust, Waist, Hip dimensions or special tailoring instructions..."></textarea>
+                </div>
+
+                <div class="p-4 rounded-xl bg-gold/5 border border-gold/20 text-xs text-gold/90 flex items-center gap-3">
+                    <span class="text-lg">✨</span>
+                    <span>Note: Every piece is custom-tailored to precision. Your completed order will be delivered to you in <strong>5–7 business days</strong>.</span>
+                </div>
+
+                <button type="submit" class="w-full bg-gradient-to-r from-gold-dark via-gold to-gold-metallic text-black font-bold py-4 rounded-xl uppercase tracking-widest text-sm shadow-lg shadow-gold/20 hover:opacity-90 transition-all mt-4">
+                    Proceed to Secure Payment via Paystack
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Order Success Notification Overlay -->
+    <div id="successModal" class="fixed inset-0 z-50 flex items-center justify-center bg-black/90 backdrop-blur-md hidden p-4">
+        <div class="bg-cardBg border border-gold rounded-3xl max-w-md w-full p-8 text-center space-y-6 shadow-2xl">
+            <div class="w-20 h-20 bg-gold/10 border-2 border-gold rounded-full flex items-center justify-center mx-auto text-gold text-3xl">
+                ✓
+            </div>
+            <div class="space-y-2">
+                <h3 class="font-serif text-3xl font-bold gold-gradient">Order Confirmed!</h3>
+                <p class="text-gray-300 text-sm">Thank you for choosing <span class="text-gold font-semibold">Mère de la Mode</span>. Payment has been successfully verified.</p>
+            </div>
+            <div class="p-4 bg-darkBg border border-gold/30 rounded-2xl text-xs space-y-1 text-gold-light">
+                <p class="font-bold uppercase tracking-wider">Estimated Delivery Notice</p>
+                <p class="text-gray-300">Your custom package will be crafted and delivered to your doorstep in <strong class="text-gold">5–7 business days</strong>.</p>
+            </div>
+            <button onclick="closeSuccessModal()" class="w-full bg-gold text-black font-bold py-3.5 rounded-xl uppercase tracking-wider text-xs hover:bg-gold-light transition-all">
+                Return to Homepage
+            </button>
+        </div>
+    </div>
 
     <!-- Footer -->
-    <footer>
-        &copy; 2026 Mother of Fashion. All Rights Reserved. Custom Luxury Experience.
+    <footer class="bg-cardBg border-t border-gold/20 py-12 px-4 sm:px-6 lg:px-8 mt-20">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8 text-center md:text-left">
+            <!-- Footer Logo that links back to top -->
+            <a href="#top" class="flex items-center space-x-4 group cursor-pointer">
+                <div class="w-12 h-12 rounded-full p-[2px] bg-gradient-to-tr from-gold-dark via-gold-light to-gold overflow-hidden flex items-center justify-center group-hover:scale-105 transition-transform">
+                    <img src="image.png" alt="Logo" class="w-full h-full object-cover rounded-full">
+                </div>
+                <div>
+                    <span class="font-serif font-bold text-base tracking-wider gold-gradient">MÈRE DE LA MODE</span>
+                    <p class="text-[10px] tracking-widest text-gold-metallic/80 uppercase">&lt;Mother of Fashion&gt;</p>
+                </div>
+            </a>
+            <p class="text-xs text-gray-500 tracking-wider">&copy; 2026 Mère de la Mode. All rights reserved. Beauty Redefined.</p>
+            <div class="flex space-x-6 text-xs uppercase tracking-widest text-gray-400">
+                <a href="#collection" class="hover:text-gold transition-colors">Atelier</a>
+                <a href="#top" class="hover:text-gold transition-colors">Back to Top</a>
+            </div>
+        </div>
     </footer>
 
+    <!-- Script Logic -->
+    <script>
+        let selectedDress = { title: '', price: 0 };
+
+        function scrollToCatalog() {
+            document.getElementById('collection').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function openOrderModal(title, price) {
+            selectedDress = { title, price };
+            document.getElementById('modalDressTitle').innerText = title;
+            document.getElementById('modalDressPrice').innerText = '₦' + price.toLocaleString();
+            document.getElementById('orderModal').classList.remove('hidden');
+        }
+
+        function closeOrderModal() {
+            document.getElementById('orderModal').classList.add('hidden');
+        }
+
+        function closeSuccessModal() {
+            document.getElementById('successModal').classList.add('hidden');
+            location.reload();
+        }
+
+        function processPayment(e) {
+            e.preventDefault();
+            
+            const name = document.getElementById('customerName').value;
+            const email = document.getElementById('customerEmail').value;
+            const phone = document.getElementById('customerPhone').value;
+            const size = document.getElementById('customerSize').value;
+            const address = document.getElementById('customerAddress').value;
+            const notes = document.getElementById('customerNotes').value;
+
+            closeOrderModal();
+
+            // Paystack Setup (Replace test key with your live public key when ready)
+            let handler = PaystackPop.setup({
+                key: 'pk_test_ed057d197669d054972e382d56aeef06599b50cd', 
+                email: email,
+                amount: selectedDress.price * 100, // Amount in kobo
+                currency: 'NGN',
+                ref: 'MDM_' + Math.floor((Math.random() * 1000000000) + 1),
+                metadata: {
+                    custom_fields: [
+                        { display_name: "Customer Name", variable_name: "customer_name", value: name },
+                        { display_name: "Dress Style", variable_name: "dress_style", value: selectedDress.title },
+                        { display_name: "Size / Fit", variable_name: "size_fit", value: size },
+                        { display_name: "Customer Phone", variable_name: "phone", value: phone },
+                        { display_name: "Delivery Address", variable_name: "address", value: address },
+                        { display_name: "Custom Notes", variable_name: "notes", value: notes }
+                    ]
+                },
+                callback: function(response) {
+                    // Show success confirmation screen
+                    document.getElementById('successModal').classList.remove('hidden');
+
+                    // Automatically format and send order details to your WhatsApp number
+                    const whatsappNumber = "2349022882806"; 
+                    const text = `New Paid Order - Mère de la Mode!%0A%0A` +
+                                 `*Dress:* ${selectedDress.title}%0A` +
+                                 `*Price:* ₦${selectedDress.price.toLocaleString()}%0A` +
+                                 `*Name:* ${name}%0A` +
+                                 `*Email:* ${email}%0A` +
+                                 `*Phone:* ${phone}%0A` +
+                                 `*Size/Fit:* ${size}%0A` +
+                                 `*Address:* ${address}%0A` +
+                                 `*Custom Notes:* ${notes}%0A` +
+                                 `*Paystack Ref:* ${response.reference}`;
+
+                    setTimeout(() => {
+                        window.open(`https://wa.me/${whatsappNumber}?text=${text}`, '_blank');
+                    }, 1500);
+                },
+                onClose: function() {
+                    alert('Transaction window was closed.');
+                }
+            });
+            handler.openIframe();
+        }
+    </script>
 </body>
 </html>
