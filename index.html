@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MÈRE DE LA MODE { Mother Of Fashion }| Luxury Couture & Modest Wear</title>
+    <title>MÈRE DE LA MODE | Luxury Couture & Modest Wear</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Paystack Integration Script Placeholder -->
+    <!-- Paystack Integration Script -->
     <script src="https://js.paystack.co/v1/inline.js"></script>
 </head>
 <body class="bg-stone-50 text-stone-800 font-sans">
@@ -33,7 +33,7 @@
             <div class="flex items-center space-x-4">
                 <a href="https://wa.me/2349022882806" target="_blank" class="bg-green-600 text-white px-4 py-2 rounded-full text-xs font-semibold flex items-center space-x-2 hover:bg-green-700 transition-colors">
                     <i class="fa-brands fa-whatsapp text-sm"></i>
-                    <span>WhatsApp Order</span>
+                    <span>WhatsApp</span>
                 </a>
             </div>
         </div>
@@ -57,9 +57,12 @@
                     <div class="p-4 flex flex-col flex-grow justify-between space-y-3">
                         <div>
                             <h3 class="font-medium text-stone-900 text-sm mb-1">Ankara & Aso Oke Bubu Gown</h3>
-                            <p class="text-amber-700 font-bold text-base">₦30,000</p>
+                            <p class="text-amber-700 font-bold text-base mb-2">₦30,000</p>
                         </div>
-                        <button onclick="checkoutItem('Ankara & Aso Oke Bubu Gown', 30000)" class="w-full bg-stone-900 text-white py-2 rounded-lg text-xs font-semibold hover:bg-amber-700 transition-colors">Order via WhatsApp</button>
+                        <div class="space-y-2">
+                            <button onclick="payWithPaystack('Ankara & Aso Oke Bubu Gown', 30000)" class="w-full bg-amber-700 text-white py-2 rounded-lg text-xs font-semibold hover:bg-amber-800 transition-colors flex items-center justify-center space-x-1.5"><i class="fa-solid fa-credit-card"></i><span>Pay Online (Paystack)</span></button>
+                            <button onclick="checkoutWhatsApp('Ankara & Aso Oke Bubu Gown', 30000)" class="w-full bg-green-600 text-white py-2 rounded-lg text-xs font-semibold hover:bg-green-700 transition-colors flex items-center justify-center space-x-1.5"><i class="fa-brands fa-whatsapp"></i><span>Order on WhatsApp</span></button>
+                        </div>
                     </div>
                 </div>
 
@@ -71,9 +74,12 @@
                     <div class="p-4 flex flex-col flex-grow justify-between space-y-3">
                         <div>
                             <h3 class="font-medium text-stone-900 text-sm mb-1">Ankara Bubu Gown</h3>
-                            <p class="text-amber-700 font-bold text-base">₦30,000</p>
+                            <p class="text-amber-700 font-bold text-base mb-2">₦30,000</p>
                         </div>
-                        <button onclick="checkoutItem('Ankara Bubu Gown', 30000)" class="w-full bg-stone-900 text-white py-2 rounded-lg text-xs font-semibold hover:bg-amber-700 transition-colors">Order via WhatsApp</button>
+                        <div class="space-y-2">
+                            <button onclick="payWithPaystack('Ankara Bubu Gown', 30000)" class="w-full bg-amber-700 text-white py-2 rounded-lg text-xs font-semibold hover:bg-amber-800 transition-colors flex items-center justify-center space-x-1.5"><i class="fa-solid fa-credit-card"></i><span>Pay Online (Paystack)</span></button>
+                            <button onclick="checkoutWhatsApp('Ankara Bubu Gown', 30000)" class="w-full bg-green-600 text-white py-2 rounded-lg text-xs font-semibold hover:bg-green-700 transition-colors flex items-center justify-center space-x-1.5"><i class="fa-brands fa-whatsapp"></i><span>Order on WhatsApp</span></button>
+                        </div>
                     </div>
                 </div>
 
@@ -85,9 +91,12 @@
                     <div class="p-4 flex flex-col flex-grow justify-between space-y-3">
                         <div>
                             <h3 class="font-medium text-stone-900 text-sm mb-1">Long Ankara bubu gown</h3>
-                            <p class="text-amber-700 font-bold text-base">₦30,000</p>
+                            <p class="text-amber-700 font-bold text-base mb-2">₦30,000</p>
                         </div>
-                        <button onclick="checkoutItem('Long Ankara bubu gown', 30000)" class="w-full bg-stone-900 text-white py-2 rounded-lg text-xs font-semibold hover:bg-amber-700 transition-colors">Order via WhatsApp</button>
+                        <div class="space-y-2">
+                            <button onclick="payWithPaystack('Long Ankara bubu gown', 30000)" class="w-full bg-amber-700 text-white py-2 rounded-lg text-xs font-semibold hover:bg-amber-800 transition-colors flex items-center justify-center space-x-1.5"><i class="fa-solid fa-credit-card"></i><span>Pay Online (Paystack)</span></button>
+                            <button onclick="checkoutWhatsApp('Long Ankara bubu gown', 30000)" class="w-full bg-green-600 text-white py-2 rounded-lg text-xs font-semibold hover:bg-green-700 transition-colors flex items-center justify-center space-x-1.5"><i class="fa-brands fa-whatsapp"></i><span>Order on WhatsApp</span></button>
+                        </div>
                     </div>
                 </div>
 
@@ -99,9 +108,12 @@
                     <div class="p-4 flex flex-col flex-grow justify-between space-y-3">
                         <div>
                             <h3 class="font-medium text-stone-900 text-sm mb-1">Long Ankara bubu gown</h3>
-                            <p class="text-amber-700 font-bold text-base">₦30,000</p>
+                            <p class="text-amber-700 font-bold text-base mb-2">₦30,000</p>
                         </div>
-                        <button onclick="checkoutItem('Long Ankara bubu gown', 30000)" class="w-full bg-stone-900 text-white py-2 rounded-lg text-xs font-semibold hover:bg-amber-700 transition-colors">Order via WhatsApp</button>
+                        <div class="space-y-2">
+                            <button onclick="payWithPaystack('Long Ankara bubu gown', 30000)" class="w-full bg-amber-700 text-white py-2 rounded-lg text-xs font-semibold hover:bg-amber-800 transition-colors flex items-center justify-center space-x-1.5"><i class="fa-solid fa-credit-card"></i><span>Pay Online (Paystack)</span></button>
+                            <button onclick="checkoutWhatsApp('Long Ankara bubu gown', 30000)" class="w-full bg-green-600 text-white py-2 rounded-lg text-xs font-semibold hover:bg-green-700 transition-colors flex items-center justify-center space-x-1.5"><i class="fa-brands fa-whatsapp"></i><span>Order on WhatsApp</span></button>
+                        </div>
                     </div>
                 </div>
 
@@ -113,9 +125,12 @@
                     <div class="p-4 flex flex-col flex-grow justify-between space-y-3">
                         <div>
                             <h3 class="font-medium text-stone-900 text-sm mb-1">Short Ankara bubu gown</h3>
-                            <p class="text-amber-700 font-bold text-base">₦25,000</p>
+                            <p class="text-amber-700 font-bold text-base mb-2">₦25,000</p>
                         </div>
-                        <button onclick="checkoutItem('Short Ankara bubu gown', 25000)" class="w-full bg-stone-900 text-white py-2 rounded-lg text-xs font-semibold hover:bg-amber-700 transition-colors">Order via WhatsApp</button>
+                        <div class="space-y-2">
+                            <button onclick="payWithPaystack('Short Ankara bubu gown', 25000)" class="w-full bg-amber-700 text-white py-2 rounded-lg text-xs font-semibold hover:bg-amber-800 transition-colors flex items-center justify-center space-x-1.5"><i class="fa-solid fa-credit-card"></i><span>Pay Online (Paystack)</span></button>
+                            <button onclick="checkoutWhatsApp('Short Ankara bubu gown', 25000)" class="w-full bg-green-600 text-white py-2 rounded-lg text-xs font-semibold hover:bg-green-700 transition-colors flex items-center justify-center space-x-1.5"><i class="fa-brands fa-whatsapp"></i><span>Order on WhatsApp</span></button>
+                        </div>
                     </div>
                 </div>
 
@@ -126,10 +141,13 @@
                     </div>
                     <div class="p-4 flex flex-col flex-grow justify-between space-y-3">
                         <div>
-                            <h3 class="font-medium text-stone-900 text-sm mb-1">Women's Black Ankara Patch Kaftan Bubu Gown – Free Size, Comfortable Maxi Dress</h3>
-                            <p class="text-amber-700 font-bold text-base">₦25,000</p>
+                            <h3 class="font-medium text-stone-900 text-sm mb-1">Women's Black Ankara Patch Kaftan Bubu Gown</h3>
+                            <p class="text-amber-700 font-bold text-base mb-2">₦25,000</p>
                         </div>
-                        <button onclick="checkoutItem('Women\'s Black Ankara Patch Kaftan Bubu Gown', 25000)" class="w-full bg-stone-900 text-white py-2 rounded-lg text-xs font-semibold hover:bg-amber-700 transition-colors">Order via WhatsApp</button>
+                        <div class="space-y-2">
+                            <button onclick="payWithPaystack('Women\'s Black Ankara Patch Kaftan Bubu Gown', 25000)" class="w-full bg-amber-700 text-white py-2 rounded-lg text-xs font-semibold hover:bg-amber-800 transition-colors flex items-center justify-center space-x-1.5"><i class="fa-solid fa-credit-card"></i><span>Pay Online (Paystack)</span></button>
+                            <button onclick="checkoutWhatsApp('Women\'s Black Ankara Patch Kaftan Bubu Gown', 25000)" class="w-full bg-green-600 text-white py-2 rounded-lg text-xs font-semibold hover:bg-green-700 transition-colors flex items-center justify-center space-x-1.5"><i class="fa-brands fa-whatsapp"></i><span>Order on WhatsApp</span></button>
+                        </div>
                     </div>
                 </div>
 
@@ -140,10 +158,13 @@
                     </div>
                     <div class="p-4 flex flex-col flex-grow justify-between space-y-3">
                         <div>
-                            <h3 class="font-medium text-stone-900 text-sm mb-1">Ankara Bubu Gown</h3>
-                            <p class="text-amber-700 font-bold text-base">₦25,000</p>
+                            <h3 class="font-medium text-stone-900 text-sm mb-1">Ankara Bubu Gown (Fringed)</h3>
+                            <p class="text-amber-700 font-bold text-base mb-2">₦25,000</p>
                         </div>
-                        <button onclick="checkoutItem('Ankara Bubu Gown (Fringed)', 25000)" class="w-full bg-stone-900 text-white py-2 rounded-lg text-xs font-semibold hover:bg-amber-700 transition-colors">Order via WhatsApp</button>
+                        <div class="space-y-2">
+                            <button onclick="payWithPaystack('Ankara Bubu Gown (Fringed)', 25000)" class="w-full bg-amber-700 text-white py-2 rounded-lg text-xs font-semibold hover:bg-amber-800 transition-colors flex items-center justify-center space-x-1.5"><i class="fa-solid fa-credit-card"></i><span>Pay Online (Paystack)</span></button>
+                            <button onclick="checkoutWhatsApp('Ankara Bubu Gown (Fringed)', 25000)" class="w-full bg-green-600 text-white py-2 rounded-lg text-xs font-semibold hover:bg-green-700 transition-colors flex items-center justify-center space-x-1.5"><i class="fa-brands fa-whatsapp"></i><span>Order on WhatsApp</span></button>
+                        </div>
                     </div>
                 </div>
 
@@ -154,10 +175,13 @@
                     </div>
                     <div class="p-4 flex flex-col flex-grow justify-between space-y-3">
                         <div>
-                            <h3 class="font-medium text-stone-900 text-sm mb-1">Women's Pink Ankara Patch Kaftan Bubu Gown – Free Size, Comfortable Maxi Dress</h3>
-                            <p class="text-amber-700 font-bold text-base">₦25,000</p>
+                            <h3 class="font-medium text-stone-900 text-sm mb-1">Women's Pink Ankara Patch Kaftan Bubu Gown</h3>
+                            <p class="text-amber-700 font-bold text-base mb-2">₦25,000</p>
                         </div>
-                        <button onclick="checkoutItem('Women\'s Pink Ankara Patch Kaftan Bubu Gown', 25000)" class="w-full bg-stone-900 text-white py-2 rounded-lg text-xs font-semibold hover:bg-amber-700 transition-colors">Order via WhatsApp</button>
+                        <div class="space-y-2">
+                            <button onclick="payWithPaystack('Women\'s Pink Ankara Patch Kaftan Bubu Gown', 25000)" class="w-full bg-amber-700 text-white py-2 rounded-lg text-xs font-semibold hover:bg-amber-800 transition-colors flex items-center justify-center space-x-1.5"><i class="fa-solid fa-credit-card"></i><span>Pay Online (Paystack)</span></button>
+                            <button onclick="checkoutWhatsApp('Women\'s Pink Ankara Patch Kaftan Bubu Gown', 25000)" class="w-full bg-green-600 text-white py-2 rounded-lg text-xs font-semibold hover:bg-green-700 transition-colors flex items-center justify-center space-x-1.5"><i class="fa-brands fa-whatsapp"></i><span>Order on WhatsApp</span></button>
+                        </div>
                     </div>
                 </div>
 
@@ -168,10 +192,13 @@
                     </div>
                     <div class="p-4 flex flex-col flex-grow justify-between space-y-3">
                         <div>
-                            <h3 class="font-medium text-stone-900 text-sm mb-1">Classy Ladies Printed 2 Piece Set, Stylish Top & Wide Leg Trousers, Ladies Outfit</h3>
-                            <p class="text-amber-700 font-bold text-base">₦50,000</p>
+                            <h3 class="font-medium text-stone-900 text-sm mb-1">Classy Ladies Printed 2 Piece Set</h3>
+                            <p class="text-amber-700 font-bold text-base mb-2">₦50,000</p>
                         </div>
-                        <button onclick="checkoutItem('Classy Ladies Printed 2 Piece Set', 50000)" class="w-full bg-stone-900 text-white py-2 rounded-lg text-xs font-semibold hover:bg-amber-700 transition-colors">Order via WhatsApp</button>
+                        <div class="space-y-2">
+                            <button onclick="payWithPaystack('Classy Ladies Printed 2 Piece Set', 50000)" class="w-full bg-amber-700 text-white py-2 rounded-lg text-xs font-semibold hover:bg-amber-800 transition-colors flex items-center justify-center space-x-1.5"><i class="fa-solid fa-credit-card"></i><span>Pay Online (Paystack)</span></button>
+                            <button onclick="checkoutWhatsApp('Classy Ladies Printed 2 Piece Set', 50000)" class="w-full bg-green-600 text-white py-2 rounded-lg text-xs font-semibold hover:bg-green-700 transition-colors flex items-center justify-center space-x-1.5"><i class="fa-brands fa-whatsapp"></i><span>Order on WhatsApp</span></button>
+                        </div>
                     </div>
                 </div>
 
@@ -182,10 +209,13 @@
                     </div>
                     <div class="p-4 flex flex-col flex-grow justify-between space-y-3">
                         <div>
-                            <h3 class="font-medium text-stone-900 text-sm mb-1">Elegant Women's 2-Piece Trouser & Jacket Set – Classy Office Wear Outfit</h3>
-                            <p class="text-amber-700 font-bold text-base">₦50,000</p>
+                            <h3 class="font-medium text-stone-900 text-sm mb-1">Elegant Women's 2-Piece Trouser & Jacket Set</h3>
+                            <p class="text-amber-700 font-bold text-base mb-2">₦50,000</p>
                         </div>
-                        <button onclick="checkoutItem('Elegant Women\'s 2-Piece Trouser & Jacket Set', 50000)" class="w-full bg-stone-900 text-white py-2 rounded-lg text-xs font-semibold hover:bg-amber-700 transition-colors">Order via WhatsApp</button>
+                        <div class="space-y-2">
+                            <button onclick="payWithPaystack('Elegant Women\'s 2-Piece Trouser & Jacket Set', 50000)" class="w-full bg-amber-700 text-white py-2 rounded-lg text-xs font-semibold hover:bg-amber-800 transition-colors flex items-center justify-center space-x-1.5"><i class="fa-solid fa-credit-card"></i><span>Pay Online (Paystack)</span></button>
+                            <button onclick="checkoutWhatsApp('Elegant Women\'s 2-Piece Trouser & Jacket Set', 50000)" class="w-full bg-green-600 text-white py-2 rounded-lg text-xs font-semibold hover:bg-green-700 transition-colors flex items-center justify-center space-x-1.5"><i class="fa-brands fa-whatsapp"></i><span>Order on WhatsApp</span></button>
+                        </div>
                     </div>
                 </div>
 
@@ -196,10 +226,13 @@
                     </div>
                     <div class="p-4 flex flex-col flex-grow justify-between space-y-3">
                         <div>
-                            <h3 class="font-medium text-stone-900 text-sm mb-1">Ladies Plain Stripped Skirt & Blouse- Black & White</h3>
-                            <p class="text-amber-700 font-bold text-base">₦50,000</p>
+                            <h3 class="font-medium text-stone-900 text-sm mb-1">Ladies Plain Stripped Skirt & Blouse</h3>
+                            <p class="text-amber-700 font-bold text-base mb-2">₦50,000</p>
                         </div>
-                        <button onclick="checkoutItem('Ladies Plain Stripped Skirt & Blouse', 50000)" class="w-full bg-stone-900 text-white py-2 rounded-lg text-xs font-semibold hover:bg-amber-700 transition-colors">Order via WhatsApp</button>
+                        <div class="space-y-2">
+                            <button onclick="payWithPaystack('Ladies Plain Stripped Skirt & Blouse', 50000)" class="w-full bg-amber-700 text-white py-2 rounded-lg text-xs font-semibold hover:bg-amber-800 transition-colors flex items-center justify-center space-x-1.5"><i class="fa-solid fa-credit-card"></i><span>Pay Online (Paystack)</span></button>
+                            <button onclick="checkoutWhatsApp('Ladies Plain Stripped Skirt & Blouse', 50000)" class="w-full bg-green-600 text-white py-2 rounded-lg text-xs font-semibold hover:bg-green-700 transition-colors flex items-center justify-center space-x-1.5"><i class="fa-brands fa-whatsapp"></i><span>Order on WhatsApp</span></button>
+                        </div>
                     </div>
                 </div>
 
@@ -211,9 +244,12 @@
                     <div class="p-4 flex flex-col flex-grow justify-between space-y-3">
                         <div>
                             <h3 class="font-medium text-stone-900 text-sm mb-1">Gorgeous and beautiful Ankara Palazzo for ladies</h3>
-                            <p class="text-amber-700 font-bold text-base">₦15,000</p>
+                            <p class="text-amber-700 font-bold text-base mb-2">₦15,000</p>
                         </div>
-                        <button onclick="checkoutItem('Gorgeous Ankara Palazzo', 15000)" class="w-full bg-stone-900 text-white py-2 rounded-lg text-xs font-semibold hover:bg-amber-700 transition-colors">Order via WhatsApp</button>
+                        <div class="space-y-2">
+                            <button onclick="payWithPaystack('Gorgeous Ankara Palazzo', 15000)" class="w-full bg-amber-700 text-white py-2 rounded-lg text-xs font-semibold hover:bg-amber-800 transition-colors flex items-center justify-center space-x-1.5"><i class="fa-solid fa-credit-card"></i><span>Pay Online (Paystack)</span></button>
+                            <button onclick="checkoutWhatsApp('Gorgeous Ankara Palazzo', 15000)" class="w-full bg-green-600 text-white py-2 rounded-lg text-xs font-semibold hover:bg-green-700 transition-colors flex items-center justify-center space-x-1.5"><i class="fa-brands fa-whatsapp"></i><span>Order on WhatsApp</span></button>
+                        </div>
                     </div>
                 </div>
 
@@ -224,10 +260,13 @@
                     </div>
                     <div class="p-4 flex flex-col flex-grow justify-between space-y-3">
                         <div>
-                            <h3 class="font-medium text-stone-900 text-sm mb-1">Nex Two piece Top and Trousers pants set for ladies -brown</h3>
-                            <p class="text-amber-700 font-bold text-base">₦15,000</p>
+                            <h3 class="font-medium text-stone-900 text-sm mb-1">Nex Two piece Set for ladies - brown</h3>
+                            <p class="text-amber-700 font-bold text-base mb-2">₦15,000</p>
                         </div>
-                        <button onclick="checkoutItem('Nex Two piece Set - brown', 15000)" class="w-full bg-stone-900 text-white py-2 rounded-lg text-xs font-semibold hover:bg-amber-700 transition-colors">Order via WhatsApp</button>
+                        <div class="space-y-2">
+                            <button onclick="payWithPaystack('Nex Two piece Set - brown', 15000)" class="w-full bg-amber-700 text-white py-2 rounded-lg text-xs font-semibold hover:bg-amber-800 transition-colors flex items-center justify-center space-x-1.5"><i class="fa-solid fa-credit-card"></i><span>Pay Online (Paystack)</span></button>
+                            <button onclick="checkoutWhatsApp('Nex Two piece Set - brown', 15000)" class="w-full bg-green-600 text-white py-2 rounded-lg text-xs font-semibold hover:bg-green-700 transition-colors flex items-center justify-center space-x-1.5"><i class="fa-brands fa-whatsapp"></i><span>Order on WhatsApp</span></button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -248,10 +287,13 @@
                     </div>
                     <div class="p-4 flex flex-col flex-grow justify-between space-y-3">
                         <div>
-                            <h3 class="font-medium text-stone-900 text-sm mb-1">Women's Floral Print Long Scarf Shawl Soft Polyester Hijab Wrap with Tassels Cream 200×70cm</h3>
-                            <p class="text-amber-700 font-bold text-base">₦10,000</p>
+                            <h3 class="font-medium text-stone-900 text-sm mb-1">Floral Print Long Scarf Shawl Cream</h3>
+                            <p class="text-amber-700 font-bold text-base mb-2">₦10,000</p>
                         </div>
-                        <button onclick="checkoutItem('Floral Print Long Scarf Shawl Cream', 10000)" class="w-full bg-stone-900 text-white py-2 rounded-lg text-xs font-semibold hover:bg-amber-700 transition-colors">Order via WhatsApp</button>
+                        <div class="space-y-2">
+                            <button onclick="payWithPaystack('Floral Print Long Scarf Shawl Cream', 10000)" class="w-full bg-amber-700 text-white py-2 rounded-lg text-xs font-semibold hover:bg-amber-800 transition-colors flex items-center justify-center space-x-1.5"><i class="fa-solid fa-credit-card"></i><span>Pay Online (Paystack)</span></button>
+                            <button onclick="checkoutWhatsApp('Floral Print Long Scarf Shawl Cream', 10000)" class="w-full bg-green-600 text-white py-2 rounded-lg text-xs font-semibold hover:bg-green-700 transition-colors flex items-center justify-center space-x-1.5"><i class="fa-brands fa-whatsapp"></i><span>Order on WhatsApp</span></button>
+                        </div>
                     </div>
                 </div>
 
@@ -262,10 +304,13 @@
                     </div>
                     <div class="p-4 flex flex-col flex-grow justify-between space-y-3">
                         <div>
-                            <h3 class="font-medium text-stone-900 text-sm mb-1">Women's Hijab Muslim Crinkle Cotton Linen Hijab Hair Head Wrap Scarf Long Shawls Scarves Turban with Tassel Edge</h3>
-                            <p class="text-amber-700 font-bold text-base">₦15,000</p>
+                            <h3 class="font-medium text-stone-900 text-sm mb-1">Crinkle Cotton Linen Hijab Purple</h3>
+                            <p class="text-amber-700 font-bold text-base mb-2">₦15,000</p>
                         </div>
-                        <button onclick="checkoutItem('Crinkle Cotton Linen Hijab Purple', 15000)" class="w-full bg-stone-900 text-white py-2 rounded-lg text-xs font-semibold hover:bg-amber-700 transition-colors">Order via WhatsApp</button>
+                        <div class="space-y-2">
+                            <button onclick="payWithPaystack('Crinkle Cotton Linen Hijab Purple', 15000)" class="w-full bg-amber-700 text-white py-2 rounded-lg text-xs font-semibold hover:bg-amber-800 transition-colors flex items-center justify-center space-x-1.5"><i class="fa-solid fa-credit-card"></i><span>Pay Online (Paystack)</span></button>
+                            <button onclick="checkoutWhatsApp('Crinkle Cotton Linen Hijab Purple', 15000)" class="w-full bg-green-600 text-white py-2 rounded-lg text-xs font-semibold hover:bg-green-700 transition-colors flex items-center justify-center space-x-1.5"><i class="fa-brands fa-whatsapp"></i><span>Order on WhatsApp</span></button>
+                        </div>
                     </div>
                 </div>
 
@@ -276,10 +321,13 @@
                     </div>
                     <div class="p-4 flex flex-col flex-grow justify-between space-y-3">
                         <div>
-                            <h3 class="font-medium text-stone-900 text-sm mb-1">3 in 1 Muslimah Khimar Hijab – Elegant Lightweight Abaya Style</h3>
-                            <p class="text-amber-700 font-bold text-base">₦35,000</p>
+                            <h3 class="font-medium text-stone-900 text-sm mb-1">3 in 1 Muslimah Khimar Hijab</h3>
+                            <p class="text-amber-700 font-bold text-base mb-2">₦35,000</p>
                         </div>
-                        <button onclick="checkoutItem('3 in 1 Muslimah Khimar Hijab', 35000)" class="w-full bg-stone-900 text-white py-2 rounded-lg text-xs font-semibold hover:bg-amber-700 transition-colors">Order via WhatsApp</button>
+                        <div class="space-y-2">
+                            <button onclick="payWithPaystack('3 in 1 Muslimah Khimar Hijab', 35000)" class="w-full bg-amber-700 text-white py-2 rounded-lg text-xs font-semibold hover:bg-amber-800 transition-colors flex items-center justify-center space-x-1.5"><i class="fa-solid fa-credit-card"></i><span>Pay Online (Paystack)</span></button>
+                            <button onclick="checkoutWhatsApp('3 in 1 Muslimah Khimar Hijab', 35000)" class="w-full bg-green-600 text-white py-2 rounded-lg text-xs font-semibold hover:bg-green-700 transition-colors flex items-center justify-center space-x-1.5"><i class="fa-brands fa-whatsapp"></i><span>Order on WhatsApp</span></button>
+                        </div>
                     </div>
                 </div>
 
@@ -290,10 +338,13 @@
                     </div>
                     <div class="p-4 flex flex-col flex-grow justify-between space-y-3">
                         <div>
-                            <h3 class="font-medium text-stone-900 text-sm mb-1">Premium Jersey Hijab for Women Viscose Scarf Lightweight Muslim Hijabs Long Shawl Islamic Scarves</h3>
-                            <p class="text-amber-700 font-bold text-base">₦12,000</p>
+                            <h3 class="font-medium text-stone-900 text-sm mb-1">Premium Jersey Hijab Green</h3>
+                            <p class="text-amber-700 font-bold text-base mb-2">₦12,000</p>
                         </div>
-                        <button onclick="checkoutItem('Premium Jersey Hijab Green', 12000)" class="w-full bg-stone-900 text-white py-2 rounded-lg text-xs font-semibold hover:bg-amber-700 transition-colors">Order via WhatsApp</button>
+                        <div class="space-y-2">
+                            <button onclick="payWithPaystack('Premium Jersey Hijab Green', 12000)" class="w-full bg-amber-700 text-white py-2 rounded-lg text-xs font-semibold hover:bg-amber-800 transition-colors flex items-center justify-center space-x-1.5"><i class="fa-solid fa-credit-card"></i><span>Pay Online (Paystack)</span></button>
+                            <button onclick="checkoutWhatsApp('Premium Jersey Hijab Green', 12000)" class="w-full bg-green-600 text-white py-2 rounded-lg text-xs font-semibold hover:bg-green-700 transition-colors flex items-center justify-center space-x-1.5"><i class="fa-brands fa-whatsapp"></i><span>Order on WhatsApp</span></button>
+                        </div>
                     </div>
                 </div>
 
@@ -304,10 +355,13 @@
                     </div>
                     <div class="p-4 flex flex-col flex-grow justify-between space-y-3">
                         <div>
-                            <h3 class="font-medium text-stone-900 text-sm mb-1">Muslim Wardrobe Women Jersey Hijab Scarf Solid Color Head Wrap Headscarf Turban Islam Veil</h3>
-                            <p class="text-amber-700 font-bold text-base">₦10,000</p>
+                            <h3 class="font-medium text-stone-900 text-sm mb-1">Muslim Wardrobe Jersey Hijab White</h3>
+                            <p class="text-amber-700 font-bold text-base mb-2">₦10,000</p>
                         </div>
-                        <button onclick="checkoutItem('Muslim Wardrobe Jersey Hijab White', 10000)" class="w-full bg-stone-900 text-white py-2 rounded-lg text-xs font-semibold hover:bg-amber-700 transition-colors">Order via WhatsApp</button>
+                        <div class="space-y-2">
+                            <button onclick="payWithPaystack('Muslim Wardrobe Jersey Hijab White', 10000)" class="w-full bg-amber-700 text-white py-2 rounded-lg text-xs font-semibold hover:bg-amber-800 transition-colors flex items-center justify-center space-x-1.5"><i class="fa-solid fa-credit-card"></i><span>Pay Online (Paystack)</span></button>
+                            <button onclick="checkoutWhatsApp('Muslim Wardrobe Jersey Hijab White', 10000)" class="w-full bg-green-600 text-white py-2 rounded-lg text-xs font-semibold hover:bg-green-700 transition-colors flex items-center justify-center space-x-1.5"><i class="fa-brands fa-whatsapp"></i><span>Order on WhatsApp</span></button>
+                        </div>
                     </div>
                 </div>
 
@@ -318,10 +372,13 @@
                     </div>
                     <div class="p-4 flex flex-col flex-grow justify-between space-y-3">
                         <div>
-                            <h3 class="font-medium text-stone-900 text-sm mb-1">Muslim Women Jersey Hijabs With Base Ball Cap Summer Sports Hat With Jersey Scarf Ready to Wear</h3>
-                            <p class="text-amber-700 font-bold text-base">₦22,000</p>
+                            <h3 class="font-medium text-stone-900 text-sm mb-1">Muslim Women Jersey Hijab With Baseball Cap</h3>
+                            <p class="text-amber-700 font-bold text-base mb-2">₦22,000</p>
                         </div>
-                        <button onclick="checkoutItem('Muslim Women Jersey Hijab With Baseball Cap', 22000)" class="w-full bg-stone-900 text-white py-2 rounded-lg text-xs font-semibold hover:bg-amber-700 transition-colors">Order via WhatsApp</button>
+                        <div class="space-y-2">
+                            <button onclick="payWithPaystack('Muslim Women Jersey Hijab With Baseball Cap', 22000)" class="w-full bg-amber-700 text-white py-2 rounded-lg text-xs font-semibold hover:bg-amber-800 transition-colors flex items-center justify-center space-x-1.5"><i class="fa-solid fa-credit-card"></i><span>Pay Online (Paystack)</span></button>
+                            <button onclick="checkoutWhatsApp('Muslim Women Jersey Hijab With Baseball Cap', 22000)" class="w-full bg-green-600 text-white py-2 rounded-lg text-xs font-semibold hover:bg-green-700 transition-colors flex items-center justify-center space-x-1.5"><i class="fa-brands fa-whatsapp"></i><span>Order on WhatsApp</span></button>
+                        </div>
                     </div>
                 </div>
 
@@ -332,10 +389,13 @@
                     </div>
                     <div class="p-4 flex flex-col flex-grow justify-between space-y-3">
                         <div>
-                            <h3 class="font-medium text-stone-900 text-sm mb-1">Clo 1 New Bohemian Style Retro Court Floral Print Women's Headscarf</h3>
-                            <p class="text-amber-700 font-bold text-base">₦12,000</p>
+                            <h3 class="font-medium text-stone-900 text-sm mb-1">Bohemian Style Retro Court Headscarf</h3>
+                            <p class="text-amber-700 font-bold text-base mb-2">₦12,000</p>
                         </div>
-                        <button onclick="checkoutItem('Bohemian Style Retro Court Headscarf', 12000)" class="w-full bg-stone-900 text-white py-2 rounded-lg text-xs font-semibold hover:bg-amber-700 transition-colors">Order via WhatsApp</button>
+                        <div class="space-y-2">
+                            <button onclick="payWithPaystack('Bohemian Style Retro Court Headscarf', 12000)" class="w-full bg-amber-700 text-white py-2 rounded-lg text-xs font-semibold hover:bg-amber-800 transition-colors flex items-center justify-center space-x-1.5"><i class="fa-solid fa-credit-card"></i><span>Pay Online (Paystack)</span></button>
+                            <button onclick="checkoutWhatsApp('Bohemian Style Retro Court Headscarf', 12000)" class="w-full bg-green-600 text-white py-2 rounded-lg text-xs font-semibold hover:bg-green-700 transition-colors flex items-center justify-center space-x-1.5"><i class="fa-brands fa-whatsapp"></i><span>Order on WhatsApp</span></button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -344,17 +404,38 @@
     </main>
 
     <!-- Footer -->
-    <footer class="bg-white border-t border-stone-200 mt-16 py-8 text-center text-sm text-stone-500">
+    <footer class="bg-white border-t border-stone-200 mt-16 py-8 text-center text-sm text-stone-500 space-y-2">
+        <p>Contact Email: <a href="mailto:Meredelamode@proton.me" class="text-amber-700 underline">Meredelamode@proton.me</a></p>
         <p>&copy; 2026 MÈRE DE LA MODE. All rights reserved. | Delivery Lead Time: 5–7 Days</p>
     </footer>
 
-    <!-- Script to handle automated WhatsApp ordering -->
+    <!-- Checkout Scripts -->
     <script>
-        function checkoutItem(itemName, itemPrice) {
+        function checkoutWhatsApp(itemName, itemPrice) {
             const phoneNumber = "2349022882806";
             const message = `Hello Mère de la Mode, I want to place an order for:\n\n*Item:* ${itemName}\n*Price:* ₦${itemPrice.toLocaleString()}\n\nPlease guide me through payment and 5-7 days delivery.`;
             const encodedMessage = encodeURIComponent(message);
             window.open(`https://wa.me/${phoneNumber}?text=${encodedMessage}`, '_blank');
+        }
+
+        function payWithPaystack(itemName, itemPrice) {
+            let handler = PaystackPop.setup({
+                key: 'pk_test_your_public_key_here', // Replace with your actual Paystack Public Key
+                email: prompt("Please enter your email address for the receipt:") || "Meredelamode@proton.me",
+                amount: itemPrice * 100, // Paystack amount is in kobo
+                currency: 'NGN',
+                ref: '' + Math.floor((Math.random() * 1000000000) + 1),
+                callback: function(response) {
+                    alert('Payment successful! Reference: ' + response.reference);
+                    const phoneNumber = "2349022882806";
+                    const message = `Hello Mère de la Mode, I have successfully paid online via Paystack for:\n\n*Item:* ${itemName}\n*Price:* ₦${itemPrice.toLocaleString()}\n*Ref:* ${response.reference}\n\nPlease process my 5-7 days delivery.`;
+                    window.open(`https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`, '_blank');
+                },
+                onClose: function() {
+                    alert('Transaction window closed.');
+                }
+            });
+            handler.openIframe();
         }
     </script>
 </body>
